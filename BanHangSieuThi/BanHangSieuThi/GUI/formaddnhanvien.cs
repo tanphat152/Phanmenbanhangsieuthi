@@ -11,16 +11,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BanHangSieuThi.GUI
-{  
-    public partial class formnhanvien : Form
+{
+    public partial class formaddnhanvien : Form
     {
-        public static string tdn;
-        public formnhanvien()
+        public formaddnhanvien()
         {
             InitializeComponent();
-            LockALL();
         }
-
         public void LockALL()
         {
             gunaTxtTen.Enabled = false;
@@ -35,7 +32,7 @@ namespace BanHangSieuThi.GUI
         }
         public void unLockALL()
         {
-           
+
             gunaTxtTen.Enabled = true;
             gunaTxtDiachi.Enabled = true;
             gunaTxtSdt.Enabled = true;
@@ -45,7 +42,7 @@ namespace BanHangSieuThi.GUI
         private void btnNhanvien_Click(object sender, EventArgs e)
         {
             unLockALL();
-           
+
         }
         SqlConnection connection;
         SqlCommand cmd;
@@ -54,14 +51,14 @@ namespace BanHangSieuThi.GUI
         DataTable table = new DataTable();
         public void LoadData()
         {
-            cmd= connection.CreateCommand();
+            cmd = connection.CreateCommand();
             cmd.CommandText = "SELECT TenNV as Hoten,TenDn as TenDangNhap ,DiaChi as Diachi,GT as GT,SDT as SDT FROM dbo.tblNhanVien";
             adap.SelectCommand = cmd;
             table.Clear();
             adap.Fill(table);
             showData.DataSource = table;
 
-                
+
         }
 
         private void formnhanvien_Load(object sender, EventArgs e)
@@ -83,7 +80,7 @@ namespace BanHangSieuThi.GUI
         {
             unLockALL();
             btnNhanvien.Enabled = false;
-            btnLuudl.Enabled = false; 
+            btnLuudl.Enabled = false;
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -118,7 +115,7 @@ namespace BanHangSieuThi.GUI
 
         public int insert()
         {
-            
+
             string name = gunaTxtTen.Text;
             string sdt = gunaTxtSdt.Text;
 
@@ -136,7 +133,7 @@ namespace BanHangSieuThi.GUI
             if (name == "" || tendangnhap == "")
             {
                 MessageBox.Show("vui lòng điền đầy đủ thông tin");
-                return 0 ;
+                return 0;
             }
             string query = " INSERT dbo.tblNhanVien( TenDn ,MatKhau ,TenNV ,GT ,DiaChi ,SDT) VALUES  (@tendangnhap ,  @matkhau , @name, @gt, @diachi, @sdt)";
             ConnectString cnn = new ConnectString();
@@ -252,7 +249,7 @@ namespace BanHangSieuThi.GUI
         {
             try
             {
-               
+
                 delete(formnhanvien.tdn);
                 MessageBox.Show("Xóa thành công");
                 using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
@@ -264,7 +261,7 @@ namespace BanHangSieuThi.GUI
             }
             catch
             {
-                MessageBox.Show("Xóa không thành công"); 
+                MessageBox.Show("Xóa không thành công");
             }
         }
 
@@ -304,7 +301,7 @@ namespace BanHangSieuThi.GUI
             {
                 connection.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                adapter.Fill(data);                
+                adapter.Fill(data);
                 connection.Close();
             }
 
@@ -312,25 +309,25 @@ namespace BanHangSieuThi.GUI
         }
         public void showTxt()
         {
-            
 
-                DataTable data = connectionTable(formnhanvien.tdn);
-                gunaTxtTdn.Text = data.Rows[0]["TenDn"].ToString();
-                gunaTxtTen.Text = data.Rows[0]["TenNV"].ToString();
-                gunaTxtSdt.Text = data.Rows[0]["Sdt"].ToString();
-                gunaTxtDiachi.Text = data.Rows[0]["Diachi"].ToString();
-               
-                string gioitinh = data.Rows[0]["GT"].ToString().TrimEnd();
-                if (gioitinh == "Nam")
-                {
-                    gunaCheckBoxNam.Checked = true;
-                    gunaCheckBoxNu.Checked = false;
-                }
-                else
-                {
-                    gunaCheckBoxNam.Checked = false;
-                    gunaCheckBoxNu.Checked = true;
-                }
+
+            DataTable data = connectionTable(formnhanvien.tdn);
+            gunaTxtTdn.Text = data.Rows[0]["TenDn"].ToString();
+            gunaTxtTen.Text = data.Rows[0]["TenNV"].ToString();
+            gunaTxtSdt.Text = data.Rows[0]["Sdt"].ToString();
+            gunaTxtDiachi.Text = data.Rows[0]["Diachi"].ToString();
+
+            string gioitinh = data.Rows[0]["GT"].ToString().TrimEnd();
+            if (gioitinh == "Nam")
+            {
+                gunaCheckBoxNam.Checked = true;
+                gunaCheckBoxNu.Checked = false;
+            }
+            else
+            {
+                gunaCheckBoxNam.Checked = false;
+                gunaCheckBoxNu.Checked = true;
+            }
 
         }
         private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -455,7 +452,6 @@ namespace BanHangSieuThi.GUI
 
         }
 
+     
     }
-
-
 }

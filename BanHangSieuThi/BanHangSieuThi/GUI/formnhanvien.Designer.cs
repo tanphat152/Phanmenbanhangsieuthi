@@ -426,6 +426,10 @@ namespace BanHangSieuThi.GUI
             this.showData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
             this.showData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.showData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
+            this.showData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showData_CellDoubleClick);
+            this.showData.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.showData_CellMouseClick);
+            this.showData.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.showData_CellMouseDoubleClick);
+            this.showData.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.showData_CellMouseDown);
             // 
             // gunaLabel1
             // 
