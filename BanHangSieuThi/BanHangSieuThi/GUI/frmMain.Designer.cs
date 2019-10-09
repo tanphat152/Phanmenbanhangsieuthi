@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnNhaphang = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.btnBanhang = new Guna.UI.WinForms.GunaButton();
             this.btnNhanvien = new Guna.UI.WinForms.GunaButton();
             this.btnKhachhang = new Guna.UI.WinForms.GunaButton();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnNhaphang.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +69,46 @@
             this.gunaLabel1.TabIndex = 5;
             this.gunaLabel1.Text = "Chức năng";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaPanel1.AutoSize = true;
+            this.gunaPanel1.Controls.Add(this.gunaLabel2);
+            this.gunaPanel1.Controls.Add(this.pictureBox1);
+            this.gunaPanel1.Location = new System.Drawing.Point(269, 4);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(737, 546);
+            this.gunaPanel1.TabIndex = 1;
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(6, 8);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(716, 66);
+            this.gunaLabel2.TabIndex = 4;
+            this.gunaLabel2.Text = "Hệ thống quản lý bán hàng siêu thị";
+            this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::BanHangSieuThi.Properties.Resources.main1;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 87);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(705, 446);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // gunaButton5
             // 
@@ -187,46 +227,7 @@
             this.btnKhachhang.Size = new System.Drawing.Size(220, 58);
             this.btnKhachhang.TabIndex = 0;
             this.btnKhachhang.Text = "Quản lý khách hàng";
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaPanel1.AutoSize = true;
-            this.gunaPanel1.Controls.Add(this.gunaLabel2);
-            this.gunaPanel1.Controls.Add(this.pictureBox1);
-            this.gunaPanel1.Location = new System.Drawing.Point(269, 4);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(737, 546);
-            this.gunaPanel1.TabIndex = 1;
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(6, 8);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(716, 66);
-            this.gunaLabel2.TabIndex = 4;
-            this.gunaLabel2.Text = "Hệ thống quản lý bán hàng siêu thị";
-            this.gunaLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::BanHangSieuThi.Properties.Resources.main1;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 87);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(705, 446);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.btnKhachhang.Click += new System.EventHandler(this.btnKhachhang_Click);
             // 
             // frmMain
             // 
