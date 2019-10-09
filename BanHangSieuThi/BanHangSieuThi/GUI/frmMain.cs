@@ -21,9 +21,11 @@ namespace BanHangSieuThi.GUI
 
         private void btnKhachhang_Click(object sender, EventArgs e)
         {
-            frmKhachhang fr = new frmKhachhang();
-            fr.Show();
-     
+            frmKhachhang a = new frmKhachhang();
+            this.Hide();
+            a.ShowDialog();
+            this.Show();
+
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -31,6 +33,11 @@ namespace BanHangSieuThi.GUI
         }
 
         private void gunaLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNhanvien_Click(object sender, EventArgs e)
         {
 
         }

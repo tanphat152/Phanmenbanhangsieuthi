@@ -104,7 +104,9 @@
     <Content Include="Image\home_hVo_icon.ico" />
     <Content Include="Image\import.png" />
     <Content Include="Image\instruction.png" />
+    <Content Include="Image\logout.png" />
     <Content Include="Image\main1.jpg" />
+    <Content Include="Image\search.png" />
     <Content Include="Image\shopping-basket.png" />
     <Content Include="Image\update.png" />
     <Content Include="Image\user %282%29.png" />
