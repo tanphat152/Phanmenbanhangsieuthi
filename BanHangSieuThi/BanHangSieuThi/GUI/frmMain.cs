@@ -17,6 +17,14 @@ namespace BanHangSieuThi.GUI
             InitializeComponent();
         }
 
+       
+
+        private void btnKhachhang_Click(object sender, EventArgs e)
+        {
+            frmKhachhang fr = new frmKhachhang();
+            fr.Show();
+     
+        }
         private void frmMain_Load(object sender, EventArgs e)
         {
 
