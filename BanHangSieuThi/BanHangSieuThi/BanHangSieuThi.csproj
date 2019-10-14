@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\SON DEP TRAI\Downloads\Bunifu UI WinForms 1.11.5.21\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
@@ -42,6 +45,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +70,12 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanvien.Designer.cs">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmKhachhang.resx">
@@ -72,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanvien.resx">
+      <DependentUpon>frmNhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
