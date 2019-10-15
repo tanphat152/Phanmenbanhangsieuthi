@@ -261,6 +261,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddnhanvien";
             this.Text = "frmAddnhanvien";
+            this.Load += new System.EventHandler(this.frmAddnhanvien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

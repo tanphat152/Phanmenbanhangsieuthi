@@ -19,12 +19,21 @@ namespace BanHangSieuThi.GUI
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true) checkBox2.Checked = false;
-            else if (checkBox2.Checked == true) checkBox1.Checked = false;
+          
         }
 
         private void gunaLabel1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void frmAddnhanvien_Load(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true) checkBox2.Checked = true;
+            
+
+            //if (checkBox2.Checked == true) checkBox1.Checked = false;
+            
 
         }
     }
