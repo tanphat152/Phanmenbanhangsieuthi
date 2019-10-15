@@ -47,14 +47,14 @@
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.btnNhaphang = new Guna.UI.WinForms.GunaPanel();
+            this.gunaTextBox6 = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.btnBanhang = new Guna.UI.WinForms.GunaButton();
             this.btnNhanvien = new Guna.UI.WinForms.GunaButton();
-            this.gunaTextBox6 = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
@@ -75,7 +75,7 @@
             this.gunaPanel1.Controls.Add(this.gunaTextBox1);
             this.gunaPanel1.Controls.Add(this.gunaLabel1);
             this.gunaPanel1.Location = new System.Drawing.Point(11, 4);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(942, 116);
             this.gunaPanel1.TabIndex = 0;
@@ -145,7 +145,7 @@
             this.gunaTextBox5.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTextBox5.Location = new System.Drawing.Point(612, 36);
-            this.gunaTextBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTextBox5.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTextBox5.Name = "gunaTextBox5";
             this.gunaTextBox5.PasswordChar = '\0';
             this.gunaTextBox5.Size = new System.Drawing.Size(120, 26);
@@ -161,7 +161,7 @@
             this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTextBox4.Location = new System.Drawing.Point(104, 67);
-            this.gunaTextBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTextBox4.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTextBox4.Name = "gunaTextBox4";
             this.gunaTextBox4.PasswordChar = '\0';
             this.gunaTextBox4.Size = new System.Drawing.Size(128, 26);
@@ -177,7 +177,7 @@
             this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTextBox3.Location = new System.Drawing.Point(366, 67);
-            this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTextBox3.Name = "gunaTextBox3";
             this.gunaTextBox3.PasswordChar = '\0';
             this.gunaTextBox3.Size = new System.Drawing.Size(120, 26);
@@ -193,7 +193,7 @@
             this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTextBox2.Location = new System.Drawing.Point(366, 36);
-            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
             this.gunaTextBox2.Size = new System.Drawing.Size(120, 26);
@@ -209,7 +209,7 @@
             this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTextBox1.Location = new System.Drawing.Point(104, 36);
-            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Size = new System.Drawing.Size(128, 26);
@@ -230,7 +230,7 @@
             // 
             this.gunaPanel2.Controls.Add(this.gunaDataGridView1);
             this.gunaPanel2.Location = new System.Drawing.Point(190, 162);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.Size = new System.Drawing.Size(764, 384);
             this.gunaPanel2.TabIndex = 1;
@@ -264,7 +264,7 @@
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(14, 14);
-            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.RowTemplate.Height = 24;
@@ -303,10 +303,50 @@
             this.btnNhaphang.Controls.Add(this.btnBanhang);
             this.btnNhaphang.Controls.Add(this.btnNhanvien);
             this.btnNhaphang.Location = new System.Drawing.Point(9, 176);
-            this.btnNhaphang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNhaphang.Margin = new System.Windows.Forms.Padding(2);
             this.btnNhaphang.Name = "btnNhaphang";
             this.btnNhaphang.Size = new System.Drawing.Size(170, 349);
             this.btnNhaphang.TabIndex = 2;
+            // 
+            // gunaTextBox6
+            // 
+            this.gunaTextBox6.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox6.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox6.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox6.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox6.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox6.Location = new System.Drawing.Point(635, 125);
+            this.gunaTextBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaTextBox6.Name = "gunaTextBox6";
+            this.gunaTextBox6.PasswordChar = '\0';
+            this.gunaTextBox6.Size = new System.Drawing.Size(158, 26);
+            this.gunaTextBox6.TabIndex = 11;
+            // 
+            // gunaButton5
+            // 
+            this.gunaButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaButton5.AnimationSpeed = 0.03F;
+            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton5.ForeColor = System.Drawing.Color.White;
+            this.gunaButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton5.Image")));
+            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton5.Location = new System.Drawing.Point(800, 127);
+            this.gunaButton5.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaButton5.Name = "gunaButton5";
+            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton5.OnHoverImage = null;
+            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton5.Size = new System.Drawing.Size(79, 24);
+            this.gunaButton5.TabIndex = 12;
+            this.gunaButton5.Text = "Search";
             // 
             // gunaButton3
             // 
@@ -321,7 +361,7 @@
             this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
             this.gunaButton3.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton3.Location = new System.Drawing.Point(0, 265);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -346,7 +386,7 @@
             this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
             this.gunaButton2.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton2.Location = new System.Drawing.Point(0, 215);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -370,7 +410,7 @@
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton1.Location = new System.Drawing.Point(2, 166);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -395,7 +435,7 @@
             this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
             this.gunaButton4.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton4.Location = new System.Drawing.Point(2, 65);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -419,7 +459,7 @@
             this.btnBanhang.Image = ((System.Drawing.Image)(resources.GetObject("btnBanhang.Image")));
             this.btnBanhang.ImageSize = new System.Drawing.Size(30, 30);
             this.btnBanhang.Location = new System.Drawing.Point(2, 115);
-            this.btnBanhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBanhang.Margin = new System.Windows.Forms.Padding(2);
             this.btnBanhang.Name = "btnBanhang";
             this.btnBanhang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnBanhang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -443,9 +483,9 @@
             this.btnNhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanvien.Image")));
             this.btnNhanvien.ImageSize = new System.Drawing.Size(30, 30);
             this.btnNhanvien.Location = new System.Drawing.Point(2, 12);
-            this.btnNhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.btnNhanvien.Name = "btnNhanvien";
-            this.btnNhanvien.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnNhanvien.OnHoverBaseColor = System.Drawing.Color.Purple;
             this.btnNhanvien.OnHoverBorderColor = System.Drawing.Color.Black;
             this.btnNhanvien.OnHoverForeColor = System.Drawing.Color.White;
             this.btnNhanvien.OnHoverImage = null;
@@ -454,46 +494,6 @@
             this.btnNhanvien.TabIndex = 1;
             this.btnNhanvien.Text = "Thêm Khách hàng";
             this.btnNhanvien.Click += new System.EventHandler(this.btnNhanvien_Click);
-            // 
-            // gunaTextBox6
-            // 
-            this.gunaTextBox6.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox6.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox6.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox6.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox6.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox6.Location = new System.Drawing.Point(635, 125);
-            this.gunaTextBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gunaTextBox6.Name = "gunaTextBox6";
-            this.gunaTextBox6.PasswordChar = '\0';
-            this.gunaTextBox6.Size = new System.Drawing.Size(158, 26);
-            this.gunaTextBox6.TabIndex = 11;
-            // 
-            // gunaButton5
-            // 
-            this.gunaButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton5.Image")));
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(800, 127);
-            this.gunaButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Size = new System.Drawing.Size(79, 24);
-            this.gunaButton5.TabIndex = 12;
-            this.gunaButton5.Text = "Search";
             // 
             // frmKhachhang
             // 
@@ -507,7 +507,7 @@
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmKhachhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Khách hàng";

@@ -58,12 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\frmAddNhanvien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmAddNhanvien.Designer.cs">
-      <DependentUpon>frmAddNhanvien.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmKhachhang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,9 +78,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI\frmAddNhanvien.resx">
-      <DependentUpon>frmAddNhanvien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhachhang.resx">
       <DependentUpon>frmKhachhang.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,11 +123,13 @@
     <Content Include="Image\main1.jpg" />
     <Content Include="Image\search.png" />
     <Content Include="Image\shopping-basket.png" />
+    <Content Include="Image\tải xuống.png" />
     <Content Include="Image\update.png" />
     <Content Include="Image\user %282%29.png" />
     <Content Include="Image\user %283%29.png" />
     <Content Include="Image\value.png" />
     <Content Include="Image\value_9p2.ico" />
+    <None Include="Resources\tải xuống.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

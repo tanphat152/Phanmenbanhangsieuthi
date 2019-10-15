@@ -16,11 +16,5 @@ namespace BanHangSieuThi.GUI
         {
             InitializeComponent();
         }
-
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
-        {
-            frmAddNhanvien frm = new frmAddNhanvien();
-            frm.Show();
-        }
     }
 }

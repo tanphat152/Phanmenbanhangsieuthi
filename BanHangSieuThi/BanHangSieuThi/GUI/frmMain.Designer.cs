@@ -55,7 +55,7 @@
             this.btnNhaphang.Controls.Add(this.btnNhanvien);
             this.btnNhaphang.Controls.Add(this.btnKhachhang);
             this.btnNhaphang.Location = new System.Drawing.Point(9, 10);
-            this.btnNhaphang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNhaphang.Margin = new System.Windows.Forms.Padding(2);
             this.btnNhaphang.Name = "btnNhaphang";
             this.btnNhaphang.Size = new System.Drawing.Size(170, 437);
             this.btnNhaphang.TabIndex = 0;
@@ -73,7 +73,7 @@
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton1.Location = new System.Drawing.Point(2, 323);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -112,7 +112,7 @@
             this.gunaButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton5.Image")));
             this.gunaButton5.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton5.Location = new System.Drawing.Point(2, 270);
-            this.gunaButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton5.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton5.Name = "gunaButton5";
             this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -137,7 +137,7 @@
             this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
             this.gunaButton4.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton4.Location = new System.Drawing.Point(2, 220);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -162,7 +162,7 @@
             this.btnBanhang.Image = ((System.Drawing.Image)(resources.GetObject("btnBanhang.Image")));
             this.btnBanhang.ImageSize = new System.Drawing.Size(30, 30);
             this.btnBanhang.Location = new System.Drawing.Point(2, 169);
-            this.btnBanhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBanhang.Margin = new System.Windows.Forms.Padding(2);
             this.btnBanhang.Name = "btnBanhang";
             this.btnBanhang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnBanhang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -187,7 +187,7 @@
             this.btnNhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanvien.Image")));
             this.btnNhanvien.ImageSize = new System.Drawing.Size(30, 30);
             this.btnNhanvien.Location = new System.Drawing.Point(2, 116);
-            this.btnNhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.btnNhanvien.Name = "btnNhanvien";
             this.btnNhanvien.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnNhanvien.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -212,7 +212,7 @@
             this.btnKhachhang.Image = ((System.Drawing.Image)(resources.GetObject("btnKhachhang.Image")));
             this.btnKhachhang.ImageSize = new System.Drawing.Size(30, 30);
             this.btnKhachhang.Location = new System.Drawing.Point(2, 64);
-            this.btnKhachhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKhachhang.Margin = new System.Windows.Forms.Padding(2);
             this.btnKhachhang.Name = "btnKhachhang";
             this.btnKhachhang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnKhachhang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -233,7 +233,7 @@
             this.gunaPanel1.Controls.Add(this.gunaLabel2);
             this.gunaPanel1.Controls.Add(this.pictureBox1);
             this.gunaPanel1.Location = new System.Drawing.Point(202, 3);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(553, 444);
             this.gunaPanel1.TabIndex = 1;
@@ -260,7 +260,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::BanHangSieuThi.Properties.Resources.main1;
             this.pictureBox1.Location = new System.Drawing.Point(13, 71);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(529, 362);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -276,7 +276,7 @@
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.btnNhaphang);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý bàn hàng siêu thi";
