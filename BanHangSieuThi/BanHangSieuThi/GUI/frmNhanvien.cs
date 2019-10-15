@@ -16,5 +16,11 @@ namespace BanHangSieuThi.GUI
         {
             InitializeComponent();
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            frmAddnhanvien frm = new frmAddnhanvien();
+            frm.Show();
+        }
     }
 }

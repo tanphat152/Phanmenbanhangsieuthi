@@ -39,7 +39,8 @@ namespace BanHangSieuThi.GUI
 
         private void btnNhanvien_Click(object sender, EventArgs e)
         {
-
+            frmNhanvien frm = new frmNhanvien();
+            frm.Show();
         }
     }
 }
