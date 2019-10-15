@@ -18,7 +18,7 @@ namespace BanHangSieuThi.GUI
         }
 
        
-
+  
         private void btnKhachhang_Click(object sender, EventArgs e)
         {
             frmKhachhang a = new frmKhachhang();
