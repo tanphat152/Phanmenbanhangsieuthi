@@ -349,9 +349,9 @@ namespace BanHangSieuThi.GUI
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAddNhanvien";
             this.Text = "frmAddNhanvien";
-            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);    
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);  
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
