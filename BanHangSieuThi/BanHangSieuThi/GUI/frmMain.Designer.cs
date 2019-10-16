@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnNhaphang = new Guna.UI.WinForms.GunaPanel();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
@@ -39,7 +40,7 @@
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.btnNhaphang.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,6 +48,7 @@
             // 
             // btnNhaphang
             // 
+            this.btnNhaphang.Controls.Add(this.gunaButton2);
             this.btnNhaphang.Controls.Add(this.gunaButton1);
             this.btnNhaphang.Controls.Add(this.gunaLabel1);
             this.btnNhaphang.Controls.Add(this.gunaButton5);
@@ -58,6 +60,30 @@
             this.btnNhaphang.Name = "btnNhaphang";
             this.btnNhaphang.Size = new System.Drawing.Size(226, 538);
             this.btnNhaphang.TabIndex = 0;
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton1.Location = new System.Drawing.Point(0, 466);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Size = new System.Drawing.Size(220, 59);
+            this.gunaButton1.TabIndex = 6;
+            this.gunaButton1.Text = "Đăng xuất";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaLabel1
             // 
@@ -84,7 +110,7 @@
             this.gunaButton5.ForeColor = System.Drawing.Color.White;
             this.gunaButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton5.Image")));
             this.gunaButton5.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton5.Location = new System.Drawing.Point(3, 332);
+            this.gunaButton5.Location = new System.Drawing.Point(3, 393);
             this.gunaButton5.Name = "gunaButton5";
             this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -232,29 +258,29 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // gunaButton1
+            // gunaButton2
             // 
-            this.gunaButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
-            this.gunaButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton1.Location = new System.Drawing.Point(3, 397);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(220, 59);
-            this.gunaButton1.TabIndex = 6;
-            this.gunaButton1.Text = "Đăng xuất";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
+            this.gunaButton2.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaButton2.Location = new System.Drawing.Point(3, 332);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Size = new System.Drawing.Size(220, 55);
+            this.gunaButton2.TabIndex = 7;
+            this.gunaButton2.Text = "Thống kê";
+            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmMain
             // 
@@ -290,5 +316,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton gunaButton2;
     }
 }

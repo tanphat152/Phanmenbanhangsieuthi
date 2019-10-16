@@ -65,6 +65,15 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\fromdangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fromdangnhap.Designer.cs">
+      <DependentUpon>fromdangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmKhachhang.resx">
@@ -73,20 +82,33 @@
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fromdangnhap.resx">
+      <DependentUpon>fromdangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\BanHangSieuThi.GUI.frmKhachhang.resources" />
+    <EmbeddedResource Include="obj\Debug\BanHangSieuThi.GUI.frmMain.resources" />
+    <EmbeddedResource Include="obj\Debug\BanHangSieuThi.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <None Include="bin\Debug\BanHangSieuThi.exe.config" />
+    <None Include="obj\Debug\BanHangSieuThi.csproj.CopyComplete" />
+    <None Include="obj\Debug\BanHangSieuThi.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\BanHangSieuThi.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\BanHangSieuThi.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -97,8 +119,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\BanHangSieuThi.exe" />
+    <Content Include="bin\Debug\BanHangSieuThi.pdb" />
+    <Content Include="bin\Debug\Bunifu_UI_v1.52.dll" />
+    <Content Include="bin\Debug\Guna.UI.dll" />
     <Content Include="Image\background.jpg" />
     <Content Include="Image\cancel.png" />
+    <Content Include="Image\diagram %281%29.png" />
+    <Content Include="Image\diagram.png" />
     <Content Include="Image\download.png" />
     <Content Include="Image\employee.png" />
     <Content Include="Image\home.png" />
@@ -114,6 +142,13 @@
     <Content Include="Image\user %283%29.png" />
     <Content Include="Image\value.png" />
     <Content Include="Image\value_9p2.ico" />
+    <Content Include="obj\Debug\BanHangSieuThi.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\BanHangSieuThi.exe" />
+    <Content Include="obj\Debug\BanHangSieuThi.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
