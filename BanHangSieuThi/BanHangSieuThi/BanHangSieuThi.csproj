@@ -65,6 +65,18 @@
     <Compile Include="GUI\formnhap_hang.Designer.cs">
       <DependentUpon>formnhap_hang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmAddNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmAddNhanvien.Designer.cs">
+      <DependentUpon>frmAddNhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmEditNhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmEditNhanvien.Designer.cs">
+      <DependentUpon>frmEditNhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmKhachhang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\formnhap_hang.resx">
       <DependentUpon>formnhap_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmAddNhanvien.resx">
+      <DependentUpon>frmAddNhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmEditNhanvien.resx">
+      <DependentUpon>frmEditNhanvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhachhang.resx">
       <DependentUpon>frmKhachhang.cs</DependentUpon>
