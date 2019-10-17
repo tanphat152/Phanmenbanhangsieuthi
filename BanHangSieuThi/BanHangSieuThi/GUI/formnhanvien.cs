@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BanHangSieuThi.GUI
-{
+{  
     public partial class formnhanvien : Form
     {
         public formnhanvien()
