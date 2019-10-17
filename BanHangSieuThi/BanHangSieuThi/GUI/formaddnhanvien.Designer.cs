@@ -89,7 +89,6 @@
             this.gunaBtnSearch.Size = new System.Drawing.Size(79, 24);
             this.gunaBtnSearch.TabIndex = 22;
             this.gunaBtnSearch.Text = "Search";
-            this.gunaBtnSearch.Click += new System.EventHandler(this.gunaBtnSearch_Click);
             // 
             // gunaCheckBoxNu
             // 
@@ -102,7 +101,6 @@
             this.gunaCheckBoxNu.Size = new System.Drawing.Size(44, 20);
             this.gunaCheckBoxNu.TabIndex = 1;
             this.gunaCheckBoxNu.Text = "Nu";
-            this.gunaCheckBoxNu.CheckedChanged += new System.EventHandler(this.gunaCheckBoxNu_CheckedChanged);
             // 
             // gunaCheckBoxNam
             // 
@@ -115,7 +113,6 @@
             this.gunaCheckBoxNam.Size = new System.Drawing.Size(54, 20);
             this.gunaCheckBoxNam.TabIndex = 0;
             this.gunaCheckBoxNam.Text = "Nam";
-            this.gunaCheckBoxNam.CheckedChanged += new System.EventHandler(this.gunaCheckBoxNam_CheckedChanged);
             // 
             // panel1
             // 
@@ -142,7 +139,6 @@
             this.gunaTxtTimkiem.PasswordChar = '\0';
             this.gunaTxtTimkiem.Size = new System.Drawing.Size(158, 30);
             this.gunaTxtTimkiem.TabIndex = 21;
-            this.gunaTxtTimkiem.TextChanged += new System.EventHandler(this.gunaTxtTimkiem_TextChanged);
             // 
             // gunaPanel1
             // 
@@ -257,7 +253,6 @@
             this.gunaTxtSdt.PasswordChar = '\0';
             this.gunaTxtSdt.Size = new System.Drawing.Size(120, 30);
             this.gunaTxtSdt.TabIndex = 5;
-            this.gunaTxtSdt.TextChanged += new System.EventHandler(this.gunaTxtSdt_TextChanged);
             // 
             // gunaTxtTdn
             // 
@@ -290,7 +285,6 @@
             this.gunaTxtDiachi.PasswordChar = '\0';
             this.gunaTxtDiachi.Size = new System.Drawing.Size(120, 30);
             this.gunaTxtDiachi.TabIndex = 2;
-            this.gunaTxtDiachi.TextChanged += new System.EventHandler(this.gunaTxtDiachi_TextChanged);
             // 
             // gunaTxtTen
             // 
@@ -307,7 +301,6 @@
             this.gunaTxtTen.PasswordChar = '\0';
             this.gunaTxtTen.Size = new System.Drawing.Size(128, 30);
             this.gunaTxtTen.TabIndex = 1;
-            this.gunaTxtTen.TextChanged += new System.EventHandler(this.gunaTxtTen_TextChanged);
             // 
             // gunaLabel1
             // 
@@ -395,7 +388,7 @@
             this.showData.ThemeStyle.RowsStyle.Height = 24;
             this.showData.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
             this.showData.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.showData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showData_CellContentClick);
+            
             // 
             // gunaButton3
             // 
@@ -420,7 +413,7 @@
             this.gunaButton3.Size = new System.Drawing.Size(165, 45);
             this.gunaButton3.TabIndex = 9;
             this.gunaButton3.Text = "Quay lại trang chủ";
-            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
+            
             // 
             // gunaButton2
             // 
@@ -471,7 +464,7 @@
             this.btnLuudl.TabIndex = 7;
             this.btnLuudl.Text = "Lưu dữ liệu";
             this.btnLuudl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnLuudl.Click += new System.EventHandler(this.btnLuudl_Click);
+            
             // 
             // btnXoa
             // 
@@ -496,7 +489,7 @@
             this.btnXoa.Size = new System.Drawing.Size(165, 45);
             this.btnXoa.TabIndex = 3;
             this.btnXoa.Text = "Xóa Nhân viên";
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            
             // 
             // btnSuanhanvien
             // 
@@ -561,7 +554,7 @@
             this.btnNhaphang.Name = "btnNhaphang";
             this.btnNhaphang.Size = new System.Drawing.Size(170, 349);
             this.btnNhaphang.TabIndex = 20;
-            this.btnNhaphang.Paint += new System.Windows.Forms.PaintEventHandler(this.btnNhaphang_Paint);
+            
             // 
             // groupBox1
             // 
