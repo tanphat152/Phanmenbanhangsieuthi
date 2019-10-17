@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddNhanvien));
             this.button1 = new System.Windows.Forms.Button();
             this.gunaLineTextBox4 = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaLineTextBox5 = new Guna.UI.WinForms.GunaLineTextBox();
@@ -255,6 +256,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAddNhanvien";
             this.Text = "frmAddNhanvien";
             this.groupBox2.ResumeLayout(false);
