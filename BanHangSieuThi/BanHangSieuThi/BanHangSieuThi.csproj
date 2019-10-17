@@ -106,14 +106,26 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\formnhanvien.resx">
+      <DependentUpon>formnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\formnhap_hang.resx">
+      <DependentUpon>formnhap_hang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhachhang.resx">
       <DependentUpon>frmKhachhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frombanhang.resx">
+      <DependentUpon>frombanhang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\fromdangnhap.resx">
       <DependentUpon>fromdangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\huongdan.resx">
+      <DependentUpon>huongdan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\BanHangSieuThi.GUI.frmKhachhang.resources" />
     <EmbeddedResource Include="obj\Debug\BanHangSieuThi.GUI.frmMain.resources" />
