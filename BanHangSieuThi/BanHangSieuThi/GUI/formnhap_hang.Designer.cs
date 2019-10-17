@@ -45,10 +45,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1068, 515);
             this.Controls.Add(this.gunaLabel1);
             this.Name = "formnhap_hang";
-            this.Text = "formnhap_hang";
+            this.Text = "Nhập hàng";
             this.ResumeLayout(false);
             this.PerformLayout();
 
