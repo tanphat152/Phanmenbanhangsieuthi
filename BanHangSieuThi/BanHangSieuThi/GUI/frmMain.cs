@@ -52,5 +52,11 @@ namespace BanHangSieuThi.GUI
             a.ShowDialog();
             this.Show();
         }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
+            formnhap_hang nhaphang = new formnhap_hang();
+            nhaphang.ShowDialog();
+        }
     }
 }
