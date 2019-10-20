@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\ConnectString.cs" />
     <Compile Include="GUI\formnhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
