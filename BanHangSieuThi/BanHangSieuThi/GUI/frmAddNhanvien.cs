@@ -19,7 +19,7 @@ namespace BanHangSieuThi.GUI
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-          
+            
         }
 
         private void gunaLabel1_Click(object sender, EventArgs e)        
