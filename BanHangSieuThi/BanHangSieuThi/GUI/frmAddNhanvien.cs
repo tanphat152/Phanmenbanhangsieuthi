@@ -22,7 +22,7 @@ namespace BanHangSieuThi.GUI
           
         }
 
-        private void gunaLabel1_Click(object sender, EventArgs e)
+        private void gunaLabel1_Click(object sender, EventArgs e)        
         {
 
         }

@@ -1,6 +1,6 @@
 ﻿namespace BanHangSieuThi.GUI
 {
-    partial class frmEditNhanvien
+    partial class formnhap_hang
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditNhanvien));
-            this.SuspendLayout();
-            // 
-            // frmEditNhanvien
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmEditNhanvien";
-            this.Text = "frmEditNhanvien";
-            this.ResumeLayout(false);
-
+            this.Text = "formnhap_hang";
         }
 
         #endregion

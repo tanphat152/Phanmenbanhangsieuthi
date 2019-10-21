@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddnhanvien));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.gunaLineTextBox2 = new Guna.UI.WinForms.GunaLineTextBox();
+            this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gunaLineTextBox4 = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaLineTextBox5 = new Guna.UI.WinForms.GunaLineTextBox();
@@ -43,8 +45,6 @@
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -67,36 +67,38 @@
             this.groupBox1.Text = "Thông tin";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // gunaLabel1
+            // checkBox2
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(74, 65);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(23, 15);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "ID*";
-            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(195, 210);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(40, 18);
+            this.checkBox2.TabIndex = 6;
+            this.checkBox2.Text = "Nữ";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // gunaLabel2
+            // checkBox1
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(39, 135);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(58, 15);
-            this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "Họ và tên";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(120, 213);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(49, 18);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Nam";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // gunaLabel3
+            // gunaLineTextBox2
             // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(39, 213);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(52, 15);
-            this.gunaLabel3.TabIndex = 2;
-            this.gunaLabel3.Text = "Giới tính";
+            this.gunaLineTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
+            this.gunaLineTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaLineTextBox2.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaLineTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLineTextBox2.LineColor = System.Drawing.Color.Black;
+            this.gunaLineTextBox2.Location = new System.Drawing.Point(120, 122);
+            this.gunaLineTextBox2.Name = "gunaLineTextBox2";
+            this.gunaLineTextBox2.PasswordChar = '\0';
+            this.gunaLineTextBox2.Size = new System.Drawing.Size(131, 28);
+            this.gunaLineTextBox2.TabIndex = 4;
             // 
             // gunaLineTextBox1
             // 
@@ -111,18 +113,36 @@
             this.gunaLineTextBox1.Size = new System.Drawing.Size(131, 28);
             this.gunaLineTextBox1.TabIndex = 3;
             // 
-            // gunaLineTextBox2
+            // gunaLabel3
             // 
-            this.gunaLineTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.gunaLineTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaLineTextBox2.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaLineTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLineTextBox2.LineColor = System.Drawing.Color.Black;
-            this.gunaLineTextBox2.Location = new System.Drawing.Point(120, 122);
-            this.gunaLineTextBox2.Name = "gunaLineTextBox2";
-            this.gunaLineTextBox2.PasswordChar = '\0';
-            this.gunaLineTextBox2.Size = new System.Drawing.Size(131, 28);
-            this.gunaLineTextBox2.TabIndex = 4;
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel3.Location = new System.Drawing.Point(39, 213);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(52, 15);
+            this.gunaLabel3.TabIndex = 2;
+            this.gunaLabel3.Text = "Giới tính";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(39, 135);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(58, 15);
+            this.gunaLabel2.TabIndex = 1;
+            this.gunaLabel2.Text = "Họ và tên";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(74, 65);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(23, 15);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "ID*";
+            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
             // groupBox2
             // 
@@ -211,31 +231,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.GreenYellow;
             this.label1.Location = new System.Drawing.Point(320, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "Thêm nhân viên";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(120, 213);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(49, 18);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Nam";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(195, 210);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(40, 18);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "Nữ";
-            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 

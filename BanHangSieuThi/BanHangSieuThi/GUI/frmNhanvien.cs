@@ -22,5 +22,11 @@ namespace BanHangSieuThi.GUI
             frmAddnhanvien frm = new frmAddnhanvien();
             frm.Show();
         }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            frmEditNhanvien frm = new frmEditNhanvien();
+            frm.Show();
+        }
     }
 }
