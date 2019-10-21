@@ -45,6 +45,7 @@ namespace BanHangSieuThi.GUI
             guTbLoiNhuanSP.Enabled = false;
             guTbMoTa.Enabled = false;
             guTbNXS.Enabled = false;
+            gunaBtSua.Enabled = false;
             using (connection = new SqlConnection(connectStr.getConnectionString(1)))
             {
                 connection.Open();
@@ -82,11 +83,22 @@ namespace BanHangSieuThi.GUI
             guTbLoiNhuanSP.Text = gunaDataGridView1.Rows[i].Cells[6].Value.ToString();
             guTbMoTa.Text = gunaDataGridView1.Rows[i].Cells[7].Value.ToString();
             guTbNXS.Text = gunaDataGridView1.Rows[i].Cells[8].Value.ToString();
+            gunaBtSua.Enabled = true;
         }
-
+        string masp = "";
         private void gunaBtSua_Click(object sender, EventArgs e)
         {
-
+            dem = 2;
+            guTbMaSP.Enabled = true;
+            guTbTenSP.Enabled = true;
+            guTbGiaNhapSP.Enabled = true;
+            guTbGiaBanSP.Enabled = true;
+            guTbLoaiSP.Enabled = true;
+            guTbSLSP.Enabled = true;
+            guTbLoiNhuanSP.Enabled = true;
+            guTbMoTa.Enabled = true;
+            guTbNXS.Enabled = true;
+            masp = guTbMaSP.Text;
         }
 
         private void gunaBtXoa_Click(object sender, EventArgs e)
@@ -118,38 +130,77 @@ namespace BanHangSieuThi.GUI
                 {
                     connection.Open();
                     cmd = connection.CreateCommand();
-                    cmd.CommandText = "INSERT INTO dbo.tblSanPham VALUES  ( '" + guTbMaSP.Text + "' , N'" + guTbTenSP.Text + "' , 'LH5' , " + guTbSLSP.Text + " , '" + guTbLoiNhuanSP.Text + "' , '" + guTbGiaNhapSP.Text + "' , '" + guTbGiaBanSP.Text + "' , N'" + guTbMoTa.Text + "' , N'" + guTbNXS.Text + "' , N'' , N'LaptopVip' )";
+                    cmd.CommandText = "INSERT INTO dbo.tblSanPham VALUES  ( '" + guTbMaSP.Text + "' , N'" + guTbTenSP.Text + "' , 'LH5' , '" + guTbSLSP.Text + "' , '" + guTbLoiNhuanSP.Text + "' , '" + guTbGiaNhapSP.Text + "' , '" + guTbGiaBanSP.Text + "' , N'" + guTbMoTa.Text + "' , N'" + guTbNXS.Text + "' , N'' , N'LaptopVip' )";
                     try
                     {
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("thêm thành công");
-                        guTbMaSP.Enabled = false;
-                        guTbTenSP.Enabled = false;
-                        guTbGiaNhapSP.Enabled = false;
-                        guTbGiaBanSP.Enabled = false;
-                        guTbLoaiSP.Enabled = false;
-                        guTbSLSP.Enabled = false;
-                        guTbLoiNhuanSP.Enabled = false;
-                        guTbMoTa.Enabled = false;
-                        guTbNXS.Enabled = false;
+                        
                     }
                     catch
                     {
                         MessageBox.Show("Thêm không thành công");
-                        guTbMaSP.Enabled = false;
-                        guTbTenSP.Enabled = false;
-                        guTbGiaNhapSP.Enabled = false;
-                        guTbGiaBanSP.Enabled = false;
-                        guTbLoaiSP.Enabled = false;
-                        guTbSLSP.Enabled = false;
-                        guTbLoiNhuanSP.Enabled = false;
-                        guTbMoTa.Enabled = false;
-                        guTbNXS.Enabled = false;
+                        
                     }
                     LoadData();
                     connection.Close();
                 }
             }
+            if (dem == 2)
+            {
+  
+                using (connection = new SqlConnection(connectStr.getConnectionString(1)))
+                {
+                    connection.Open();
+                    cmd = connection.CreateCommand();
+                    cmd.CommandText = "UPDATE dbo.tblSanPham SET  MaSP='" + guTbMaSP.Text + "' ,TenSP=N'" + guTbTenSP.Text + "' , MaLH='LH5' , SoLuong='" + guTbSLSP.Text + "' , LoiNhuan='" + guTbLoiNhuanSP.Text + "' , GiaNhap='" + guTbGiaNhapSP.Text + "' , GiaBan='" + guTbGiaBanSP.Text + "' ,MoTa= N'" + guTbMoTa.Text + "' , NSX=N'" + guTbNXS.Text + "' ,HinhAnh=N'' , NhaCC=N'LaptopVip' WHERE MaSP='" + masp + "'";
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Sửa thành công");
+       
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Sửa không thành công");
+                        
+                    }
+                    LoadData();
+                    connection.Close();
+                    gunaBtSua.Enabled = false;
+                }
+            }
+            guTbMaSP.Enabled = false;
+            guTbTenSP.Enabled = false;
+            guTbGiaNhapSP.Enabled = false;
+            guTbGiaBanSP.Enabled = false;
+            guTbLoaiSP.Enabled = false;
+            guTbSLSP.Enabled = false;
+            guTbLoiNhuanSP.Enabled = false;
+            guTbMoTa.Enabled = false;
+            guTbNXS.Enabled = false;
+        }
+
+        private void gunaBtHuy_Click(object sender, EventArgs e)
+        {
+            guTbMaSP.Enabled = false;
+            guTbTenSP.Enabled = false;
+            guTbGiaNhapSP.Enabled = false;
+            guTbGiaBanSP.Enabled = false;
+            guTbLoaiSP.Enabled = false;
+            guTbSLSP.Enabled = false;
+            guTbLoiNhuanSP.Enabled = false;
+            guTbMoTa.Enabled = false;
+            guTbNXS.Text = "";
+            guTbMaSP.Text = "";
+            guTbTenSP.Text = "";
+            guTbGiaNhapSP.Text = "";
+            guTbGiaBanSP.Text = "";
+            guTbLoaiSP.Text = "";
+            guTbSLSP.Text = "";
+            guTbLoiNhuanSP.Text = "";
+            guTbMoTa.Text = "";
+            guTbNXS.Text = "";
         }
     }
 }
