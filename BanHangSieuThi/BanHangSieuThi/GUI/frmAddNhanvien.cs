@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace BanHangSieuThi.GUI
 {
     public partial class frmAddnhanvien : Form
-    {
+    {    
         public frmAddnhanvien()
         {
             InitializeComponent();   
