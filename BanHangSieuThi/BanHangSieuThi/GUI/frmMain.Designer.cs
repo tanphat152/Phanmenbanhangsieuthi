@@ -86,6 +86,7 @@
             this.gunaButton2.TabIndex = 7;
             this.gunaButton2.Text = "Thống kê";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
             // gunaButton1
             // 
