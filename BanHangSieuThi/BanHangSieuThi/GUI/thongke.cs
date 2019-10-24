@@ -35,7 +35,7 @@ namespace BanHangSieuThi.GUI
         {
             using (conn = new SqlConnection(cnn.getConnectionString(1)))
             {
-                try
+                try 
                 {
                     query = "ThongKe_SP";
                     cmd = new SqlCommand(query, conn);
