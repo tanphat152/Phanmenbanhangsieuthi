@@ -207,6 +207,8 @@
     <Content Include="obj\Debug\BanHangSieuThi.exe" />
     <Content Include="obj\Debug\BanHangSieuThi.pdb" />
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\save.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
