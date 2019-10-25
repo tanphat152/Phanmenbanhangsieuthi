@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frombanhang));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,11 +44,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frombanhang));
             this.QuyTrinhBanHang = new System.Windows.Forms.TabControl();
             this.tab1 = new System.Windows.Forms.TabPage();
-            this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_removeCart = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_removeItem = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btn_addToCart = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaGroupBox3 = new Guna.UI.WinForms.GunaGroupBox();
             this.showItemSelected = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
@@ -63,7 +64,6 @@
             this.tab3 = new System.Windows.Forms.TabPage();
             this.showDataRoom = new Guna.UI.WinForms.GunaDataGridView();
             this.HoanThanh = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.QuyTrinhBanHang.SuspendLayout();
             this.tab1.SuspendLayout();
             this.gunaGroupBox3.SuspendLayout();
@@ -85,89 +85,125 @@
             this.QuyTrinhBanHang.Controls.Add(this.tab3);
             this.QuyTrinhBanHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QuyTrinhBanHang.Location = new System.Drawing.Point(0, 0);
+            this.QuyTrinhBanHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.QuyTrinhBanHang.Name = "QuyTrinhBanHang";
             this.QuyTrinhBanHang.SelectedIndex = 0;
-            this.QuyTrinhBanHang.Size = new System.Drawing.Size(1327, 742);
+            this.QuyTrinhBanHang.Size = new System.Drawing.Size(995, 603);
             this.QuyTrinhBanHang.TabIndex = 0;
             // 
             // tab1
             // 
-            this.tab1.Controls.Add(this.gunaAdvenceButton3);
-            this.tab1.Controls.Add(this.gunaAdvenceButton2);
-            this.tab1.Controls.Add(this.gunaAdvenceButton1);
+            this.tab1.Controls.Add(this.btn_removeCart);
+            this.tab1.Controls.Add(this.btn_removeItem);
+            this.tab1.Controls.Add(this.btn_addToCart);
             this.tab1.Controls.Add(this.gunaGroupBox3);
             this.tab1.Controls.Add(this.gunaGroupBox1);
             this.tab1.Controls.Add(this.gunaGroupBox2);
             this.tab1.Controls.Add(this.btn_nextNTT);
-            this.tab1.Location = new System.Drawing.Point(4, 25);
+            this.tab1.Location = new System.Drawing.Point(4, 22);
+            this.tab1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tab1.Name = "tab1";
-            this.tab1.Padding = new System.Windows.Forms.Padding(3);
-            this.tab1.Size = new System.Drawing.Size(1319, 713);
+            this.tab1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tab1.Size = new System.Drawing.Size(987, 577);
             this.tab1.TabIndex = 0;
             this.tab1.Text = "ChonMua";
             this.tab1.UseVisualStyleBackColor = true;
             // 
-            // gunaAdvenceButton2
+            // btn_removeCart
             // 
-            this.gunaAdvenceButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaAdvenceButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton2.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton2.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.CheckedImage")));
-            this.gunaAdvenceButton2.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaAdvenceButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.Image = null;
-            this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(371, 657);
-            this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
-            this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton2.OnHoverImage = null;
-            this.gunaAdvenceButton2.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton2.Size = new System.Drawing.Size(180, 42);
-            this.gunaAdvenceButton2.TabIndex = 38;
-            this.gunaAdvenceButton2.Text = "Hủy mặt hàng";
-            this.gunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_removeCart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_removeCart.AnimationHoverSpeed = 0.07F;
+            this.btn_removeCart.AnimationSpeed = 0.03F;
+            this.btn_removeCart.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btn_removeCart.BorderColor = System.Drawing.Color.Black;
+            this.btn_removeCart.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_removeCart.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_removeCart.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_removeCart.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_removeCart.CheckedImage")));
+            this.btn_removeCart.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_removeCart.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_removeCart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_removeCart.ForeColor = System.Drawing.Color.White;
+            this.btn_removeCart.Image = null;
+            this.btn_removeCart.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_removeCart.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_removeCart.Location = new System.Drawing.Point(435, 534);
+            this.btn_removeCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_removeCart.Name = "btn_removeCart";
+            this.btn_removeCart.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_removeCart.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_removeCart.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_removeCart.OnHoverImage = null;
+            this.btn_removeCart.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_removeCart.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_removeCart.Size = new System.Drawing.Size(135, 34);
+            this.btn_removeCart.TabIndex = 39;
+            this.btn_removeCart.Text = "Hủy giỏ hàng";
+            this.btn_removeCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaAdvenceButton1
+            // btn_removeItem
             // 
-            this.gunaAdvenceButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.CheckedImage")));
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = null;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(371, 588);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(180, 42);
-            this.gunaAdvenceButton1.TabIndex = 37;
-            this.gunaAdvenceButton1.Text = "Thêm vào giỏ hàng";
-            this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_removeItem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_removeItem.AnimationHoverSpeed = 0.07F;
+            this.btn_removeItem.AnimationSpeed = 0.03F;
+            this.btn_removeItem.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btn_removeItem.BorderColor = System.Drawing.Color.Black;
+            this.btn_removeItem.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_removeItem.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_removeItem.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_removeItem.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_removeItem.CheckedImage")));
+            this.btn_removeItem.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_removeItem.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_removeItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_removeItem.ForeColor = System.Drawing.Color.White;
+            this.btn_removeItem.Image = null;
+            this.btn_removeItem.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_removeItem.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_removeItem.Location = new System.Drawing.Point(278, 534);
+            this.btn_removeItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_removeItem.Name = "btn_removeItem";
+            this.btn_removeItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_removeItem.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_removeItem.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_removeItem.OnHoverImage = null;
+            this.btn_removeItem.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_removeItem.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_removeItem.Size = new System.Drawing.Size(135, 34);
+            this.btn_removeItem.TabIndex = 38;
+            this.btn_removeItem.Text = "Hủy mặt hàng";
+            this.btn_removeItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_addToCart
+            // 
+            this.btn_addToCart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btn_addToCart.AnimationHoverSpeed = 0.07F;
+            this.btn_addToCart.AnimationSpeed = 0.03F;
+            this.btn_addToCart.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btn_addToCart.BorderColor = System.Drawing.Color.Black;
+            this.btn_addToCart.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btn_addToCart.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btn_addToCart.CheckedForeColor = System.Drawing.Color.White;
+            this.btn_addToCart.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btn_addToCart.CheckedImage")));
+            this.btn_addToCart.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btn_addToCart.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_addToCart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_addToCart.ForeColor = System.Drawing.Color.White;
+            this.btn_addToCart.Image = null;
+            this.btn_addToCart.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_addToCart.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_addToCart.Location = new System.Drawing.Point(278, 478);
+            this.btn_addToCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_addToCart.Name = "btn_addToCart";
+            this.btn_addToCart.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_addToCart.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_addToCart.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_addToCart.OnHoverImage = null;
+            this.btn_addToCart.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btn_addToCart.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_addToCart.Size = new System.Drawing.Size(135, 34);
+            this.btn_addToCart.TabIndex = 37;
+            this.btn_addToCart.Text = "Thêm vào giỏ hàng";
+            this.btn_addToCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaGroupBox3
             // 
@@ -181,10 +217,9 @@
             this.gunaGroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox3.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.gunaGroupBox3.Location = new System.Drawing.Point(4, 387);
-            this.gunaGroupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaGroupBox3.Location = new System.Drawing.Point(3, 314);
             this.gunaGroupBox3.Name = "gunaGroupBox3";
-            this.gunaGroupBox3.Size = new System.Drawing.Size(354, 317);
+            this.gunaGroupBox3.Size = new System.Drawing.Size(266, 258);
             this.gunaGroupBox3.TabIndex = 36;
             this.gunaGroupBox3.Text = "Giỏ hàng";
             this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 5);
@@ -223,15 +258,15 @@
             this.showItemSelected.DefaultCellStyle = dataGridViewCellStyle3;
             this.showItemSelected.EnableHeadersVisualStyles = false;
             this.showItemSelected.GridColor = System.Drawing.Color.White;
-            this.showItemSelected.Location = new System.Drawing.Point(7, 30);
-            this.showItemSelected.Margin = new System.Windows.Forms.Padding(5);
+            this.showItemSelected.Location = new System.Drawing.Point(5, 24);
+            this.showItemSelected.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showItemSelected.Name = "showItemSelected";
             this.showItemSelected.ReadOnly = true;
             this.showItemSelected.RowHeadersVisible = false;
             this.showItemSelected.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showItemSelected.RowTemplate.Height = 24;
             this.showItemSelected.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showItemSelected.Size = new System.Drawing.Size(340, 282);
+            this.showItemSelected.Size = new System.Drawing.Size(255, 229);
             this.showItemSelected.TabIndex = 33;
             this.showItemSelected.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showItemSelected.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -269,10 +304,9 @@
             this.gunaGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox1.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.gunaGroupBox1.Location = new System.Drawing.Point(366, 7);
-            this.gunaGroupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(274, 6);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(947, 561);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(710, 456);
             this.gunaGroupBox1.TabIndex = 35;
             this.gunaGroupBox1.Text = "Sản phẩm";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 5);
@@ -311,15 +345,15 @@
             this.showSp.DefaultCellStyle = dataGridViewCellStyle6;
             this.showSp.EnableHeadersVisualStyles = false;
             this.showSp.GridColor = System.Drawing.Color.White;
-            this.showSp.Location = new System.Drawing.Point(5, 30);
-            this.showSp.Margin = new System.Windows.Forms.Padding(5);
+            this.showSp.Location = new System.Drawing.Point(4, 28);
+            this.showSp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showSp.Name = "showSp";
             this.showSp.ReadOnly = true;
             this.showSp.RowHeadersVisible = false;
             this.showSp.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showSp.RowTemplate.Height = 24;
             this.showSp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showSp.Size = new System.Drawing.Size(937, 527);
+            this.showSp.Size = new System.Drawing.Size(703, 424);
             this.showSp.TabIndex = 32;
             this.showSp.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showSp.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -343,6 +377,7 @@
             this.showSp.ThemeStyle.RowsStyle.Height = 24;
             this.showSp.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
             this.showSp.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.showSp.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showSp_CellClick);
             // 
             // gunaGroupBox2
             // 
@@ -357,10 +392,9 @@
             this.gunaGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox2.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.gunaGroupBox2.Location = new System.Drawing.Point(4, 8);
-            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaGroupBox2.Location = new System.Drawing.Point(3, 6);
             this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(354, 371);
+            this.gunaGroupBox2.Size = new System.Drawing.Size(266, 301);
             this.gunaGroupBox2.TabIndex = 34;
             this.gunaGroupBox2.Text = "Tùy chọn theo";
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 5);
@@ -370,9 +404,10 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel2.ForeColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Location = new System.Drawing.Point(4, 204);
+            this.gunaLabel2.Location = new System.Drawing.Point(3, 166);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(100, 20);
+            this.gunaLabel2.Size = new System.Drawing.Size(81, 15);
             this.gunaLabel2.TabIndex = 35;
             this.gunaLabel2.Text = "Nhà cung cấp";
             // 
@@ -381,9 +416,10 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Location = new System.Drawing.Point(4, 37);
+            this.gunaLabel1.Location = new System.Drawing.Point(3, 30);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(106, 20);
+            this.gunaLabel1.Size = new System.Drawing.Size(85, 15);
             this.gunaLabel1.TabIndex = 33;
             this.gunaLabel1.Text = "Loại Sản Phẩm";
             // 
@@ -420,15 +456,15 @@
             this.showNCC.DefaultCellStyle = dataGridViewCellStyle9;
             this.showNCC.EnableHeadersVisualStyles = false;
             this.showNCC.GridColor = System.Drawing.Color.White;
-            this.showNCC.Location = new System.Drawing.Point(7, 235);
-            this.showNCC.Margin = new System.Windows.Forms.Padding(5);
+            this.showNCC.Location = new System.Drawing.Point(5, 191);
+            this.showNCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showNCC.Name = "showNCC";
             this.showNCC.ReadOnly = true;
             this.showNCC.RowHeadersVisible = false;
             this.showNCC.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showNCC.RowTemplate.Height = 24;
             this.showNCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showNCC.Size = new System.Drawing.Size(340, 131);
+            this.showNCC.Size = new System.Drawing.Size(255, 106);
             this.showNCC.TabIndex = 34;
             this.showNCC.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showNCC.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -486,15 +522,15 @@
             this.showType.DefaultCellStyle = dataGridViewCellStyle12;
             this.showType.EnableHeadersVisualStyles = false;
             this.showType.GridColor = System.Drawing.Color.White;
-            this.showType.Location = new System.Drawing.Point(7, 68);
-            this.showType.Margin = new System.Windows.Forms.Padding(5);
+            this.showType.Location = new System.Drawing.Point(5, 55);
+            this.showType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showType.Name = "showType";
             this.showType.ReadOnly = true;
             this.showType.RowHeadersVisible = false;
             this.showType.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showType.RowTemplate.Height = 24;
             this.showType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showType.Size = new System.Drawing.Size(340, 131);
+            this.showType.Size = new System.Drawing.Size(255, 106);
             this.showType.TabIndex = 33;
             this.showType.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showType.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -537,7 +573,8 @@
             this.btn_nextNTT.Image = null;
             this.btn_nextNTT.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_nextNTT.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_nextNTT.Location = new System.Drawing.Point(1128, 657);
+            this.btn_nextNTT.Location = new System.Drawing.Point(846, 534);
+            this.btn_nextNTT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_nextNTT.Name = "btn_nextNTT";
             this.btn_nextNTT.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_nextNTT.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -545,7 +582,7 @@
             this.btn_nextNTT.OnHoverImage = null;
             this.btn_nextNTT.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_nextNTT.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_nextNTT.Size = new System.Drawing.Size(180, 42);
+            this.btn_nextNTT.Size = new System.Drawing.Size(135, 34);
             this.btn_nextNTT.TabIndex = 0;
             this.btn_nextNTT.Text = "Tiếp tục";
             this.btn_nextNTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -554,10 +591,11 @@
             // tab2
             // 
             this.tab2.Controls.Add(this.btn_NBH);
-            this.tab2.Location = new System.Drawing.Point(4, 25);
+            this.tab2.Location = new System.Drawing.Point(4, 22);
+            this.tab2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tab2.Name = "tab2";
-            this.tab2.Padding = new System.Windows.Forms.Padding(3);
-            this.tab2.Size = new System.Drawing.Size(1319, 713);
+            this.tab2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tab2.Size = new System.Drawing.Size(987, 577);
             this.tab2.TabIndex = 1;
             this.tab2.Text = "NhapThongTinKH";
             this.tab2.UseVisualStyleBackColor = true;
@@ -580,7 +618,8 @@
             this.btn_NBH.Image = null;
             this.btn_NBH.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_NBH.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_NBH.Location = new System.Drawing.Point(1131, 663);
+            this.btn_NBH.Location = new System.Drawing.Point(848, 539);
+            this.btn_NBH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_NBH.Name = "btn_NBH";
             this.btn_NBH.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_NBH.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -588,7 +627,7 @@
             this.btn_NBH.OnHoverImage = null;
             this.btn_NBH.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_NBH.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_NBH.Size = new System.Drawing.Size(180, 42);
+            this.btn_NBH.Size = new System.Drawing.Size(135, 34);
             this.btn_NBH.TabIndex = 1;
             this.btn_NBH.Text = "Tiếp tục";
             this.btn_NBH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -598,10 +637,11 @@
             // 
             this.tab3.Controls.Add(this.showDataRoom);
             this.tab3.Controls.Add(this.HoanThanh);
-            this.tab3.Location = new System.Drawing.Point(4, 25);
+            this.tab3.Location = new System.Drawing.Point(4, 22);
+            this.tab3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tab3.Name = "tab3";
-            this.tab3.Padding = new System.Windows.Forms.Padding(3);
-            this.tab3.Size = new System.Drawing.Size(1319, 713);
+            this.tab3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tab3.Size = new System.Drawing.Size(987, 577);
             this.tab3.TabIndex = 2;
             this.tab3.Text = "NhapBaoHanh";
             this.tab3.UseVisualStyleBackColor = true;
@@ -637,15 +677,15 @@
             this.showDataRoom.DefaultCellStyle = dataGridViewCellStyle15;
             this.showDataRoom.EnableHeadersVisualStyles = false;
             this.showDataRoom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            this.showDataRoom.Location = new System.Drawing.Point(549, 113);
-            this.showDataRoom.Margin = new System.Windows.Forms.Padding(5);
+            this.showDataRoom.Location = new System.Drawing.Point(412, 92);
+            this.showDataRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showDataRoom.Name = "showDataRoom";
             this.showDataRoom.ReadOnly = true;
             this.showDataRoom.RowHeadersVisible = false;
             this.showDataRoom.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showDataRoom.RowTemplate.Height = 24;
             this.showDataRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showDataRoom.Size = new System.Drawing.Size(576, 289);
+            this.showDataRoom.Size = new System.Drawing.Size(432, 235);
             this.showDataRoom.TabIndex = 31;
             this.showDataRoom.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showDataRoom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -688,7 +728,8 @@
             this.HoanThanh.Image = null;
             this.HoanThanh.ImageSize = new System.Drawing.Size(20, 20);
             this.HoanThanh.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.HoanThanh.Location = new System.Drawing.Point(1131, 663);
+            this.HoanThanh.Location = new System.Drawing.Point(848, 539);
+            this.HoanThanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HoanThanh.Name = "HoanThanh";
             this.HoanThanh.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.HoanThanh.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -696,49 +737,19 @@
             this.HoanThanh.OnHoverImage = null;
             this.HoanThanh.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.HoanThanh.OnPressedColor = System.Drawing.Color.Black;
-            this.HoanThanh.Size = new System.Drawing.Size(180, 42);
+            this.HoanThanh.Size = new System.Drawing.Size(135, 34);
             this.HoanThanh.TabIndex = 2;
             this.HoanThanh.Text = "Xác nhận";
             this.HoanThanh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.HoanThanh.Click += new System.EventHandler(this.HoanThanh_Click);
             // 
-            // gunaAdvenceButton3
-            // 
-            this.gunaAdvenceButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaAdvenceButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton3.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton3.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton3.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton3.CheckedImage")));
-            this.gunaAdvenceButton3.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaAdvenceButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton3.Image = null;
-            this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton3.Location = new System.Drawing.Point(580, 657);
-            this.gunaAdvenceButton3.Name = "gunaAdvenceButton3";
-            this.gunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton3.OnHoverImage = null;
-            this.gunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton3.Size = new System.Drawing.Size(180, 42);
-            this.gunaAdvenceButton3.TabIndex = 39;
-            this.gunaAdvenceButton3.Text = "Hủy giỏ hàng";
-            this.gunaAdvenceButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // frombanhang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1327, 742);
+            this.ClientSize = new System.Drawing.Size(995, 603);
             this.Controls.Add(this.QuyTrinhBanHang);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frombanhang";
             this.Text = "frombanhang";
             this.QuyTrinhBanHang.ResumeLayout(false);
@@ -777,8 +788,8 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaDataGridView showNCC;
         private Guna.UI.WinForms.GunaDataGridView showType;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton2;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton3;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_removeItem;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_addToCart;
+        private Guna.UI.WinForms.GunaAdvenceButton btn_removeCart;
     }
 }

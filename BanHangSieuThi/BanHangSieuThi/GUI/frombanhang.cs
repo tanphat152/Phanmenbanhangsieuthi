@@ -15,14 +15,22 @@ namespace BanHangSieuThi.GUI
 {
     public partial class frombanhang : Form
     {
+        string idItemSelected = null;
         public frombanhang()
         {
             InitializeComponent();
             addCheckBox();
             showDataView();
             showDataItem();
+            hideButton();
         }
-
+        private void hideButton()
+        {
+            btn_addToCart.Enabled = false;
+            btn_removeItem.Enabled = false;
+            btn_removeCart.Enabled = false;
+            btn_nextNTT.Enabled = false;
+        }
         private void btn_nextNTT_Click(object sender, EventArgs e)
         {
             QuyTrinhBanHang.SelectedTab = tab2;
@@ -76,14 +84,23 @@ namespace BanHangSieuThi.GUI
         }
         private void showDataItem()
         {
-            string query = "SELECT TenSP,MaLH,SoLuong,GiaBan,MoTa,NSX FROM tblSanPham";
+            string query = "SELECT MaSP, TenSP,MaLH,SoLuong,GiaBan,MoTa,NSX FROM tblSanPham";
             loadData(query, showSp);
             string querySelected = "SELECT TenSP FROM tblSanPham where NSX like 'Dell'";
             loadData(querySelected, showItemSelected);
         }
 
-    
 
+        #region action for datagridview
 
+        #endregion
+        private void showSp_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+           if(e.RowIndex > 0)
+            {
+                btn_addToCart.Enabled = true;
+                idItemSelected = showSp.Rows[e.RowIndex].Cells[0].Value.ToString();
+            }
+        }
     }
 }
