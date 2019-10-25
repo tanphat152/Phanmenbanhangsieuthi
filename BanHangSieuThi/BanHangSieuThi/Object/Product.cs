@@ -12,6 +12,10 @@ namespace BanHangSieuThi.Object
         string _name;
         string _count;
 
+        public Product()
+        {
+        }
+
         public Product(string id, string name, string count)
         {
             _id = id;

@@ -64,6 +64,21 @@ namespace BanHangSieuThi.GUI
             }
             dataView.DataSource = data.Tables[0];
         }
+        private DataSet loadData(string query)
+        {
+            DataSet data = new DataSet();
+            ConnectString b = new ConnectString();
+            string con = b.getConnectionString(fromdangnhap.checkConnectionString);
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+
+                connect.Open();
+                SqlDataAdapter apter = new SqlDataAdapter(query, con);
+                apter.Fill(data);
+                connect.Close();
+            }
+            return data;
+        }
         //show data for view type and ncc
         private void showDataView()
         {
@@ -108,8 +123,9 @@ namespace BanHangSieuThi.GUI
 
         private void btn_addToCart_Click(object sender, EventArgs e)
         {
-
-            cart.Add()
+            string query = "SELECT MaSP,TenSP FROM tblSanPham WHERE MaSP LIKE '"+ idItemSelected + "'" ;
+            DataSet data = loadData(query);
+           
         }
     }
 }
