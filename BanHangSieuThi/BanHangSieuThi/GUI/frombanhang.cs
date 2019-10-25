@@ -20,6 +20,7 @@ namespace BanHangSieuThi.GUI
             InitializeComponent();
             addCheckBox();
             showDataView();
+            showDataItem();
         }
 
         private void btn_nextNTT_Click(object sender, EventArgs e)
@@ -75,7 +76,10 @@ namespace BanHangSieuThi.GUI
         }
         private void showDataItem()
         {
-
+            string query = "SELECT TenSP,MaLH,SoLuong,GiaBan,MoTa,NSX FROM tblSanPham";
+            loadData(query, showSp);
+            string querySelected = "SELECT TenSP FROM tblSanPham where NSX like 'Dell'";
+            loadData(querySelected, showItemSelected);
         }
 
     
