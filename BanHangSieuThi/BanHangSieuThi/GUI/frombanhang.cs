@@ -16,5 +16,20 @@ namespace BanHangSieuThi.GUI
         {
             InitializeComponent();
         }
+
+        private void btn_nextNTT_Click(object sender, EventArgs e)
+        {
+            QuyTrinhBanHang.SelectedTab = tab2;
+        }
+
+        private void btn_NBH_Click(object sender, EventArgs e)
+        {
+            QuyTrinhBanHang.SelectedTab = tab3;
+        }
+
+        private void HoanThanh_Click(object sender, EventArgs e)
+        {
+            QuyTrinhBanHang.SelectedTab = tab1;
+        }
     }
 }
