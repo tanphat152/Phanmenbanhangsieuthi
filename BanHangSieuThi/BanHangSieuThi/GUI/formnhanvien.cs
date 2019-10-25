@@ -31,13 +31,22 @@ namespace BanHangSieuThi.GUI
         DataTable table = new DataTable();
         public void LoadData()
         {
-            cmd.Connection.CreateCommand();
-            cmd.CommandText = ("SELECT TenNV,TenDn,DiaChi,GT,SDT FROM dbo.tblNhanVien");
+            cmd= connection.CreateCommand();
+            cmd.CommandText = "SELECT TenNV,TenDn,DiaChi,GT,SDT FROM dbo.tblNhanVien";
             adap.SelectCommand = cmd;
             table.Clear();
             adap.Fill(table);
             gunaDataGridView1.DataSource = table;
         }
 
+        private void formnhanvien_Load(object sender, EventArgs e)
+        {
+            using (connection = new SqlConnection(connectStr.getConnectionString(0)))
+            {
+                connection.Open();
+                LoadData();
+                connection.Close();
+            }
+        }
     }
 }

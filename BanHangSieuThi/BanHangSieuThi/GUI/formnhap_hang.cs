@@ -46,7 +46,7 @@ namespace BanHangSieuThi.GUI
             guTbMoTa.Enabled = false;
             guTbNXS.Enabled = false;
             gunaBtSua.Enabled = false;
-            using (connection = new SqlConnection(connectStr.getConnectionString(1)))
+            using (connection = new SqlConnection(connectStr.getConnectionString(0)))
             {
                 connection.Open();
                 LoadData();
