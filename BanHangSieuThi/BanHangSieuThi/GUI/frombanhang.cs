@@ -1,4 +1,5 @@
 ﻿using BanHangSieuThi.DataAccess;
+using BanHangSieuThi.Object;
 using Guna.UI.WinForms;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace BanHangSieuThi.GUI
 {
     public partial class frombanhang : Form
     {
+        Cart cart = null;
         string idItemSelected = null;
         public frombanhang()
         {
@@ -23,6 +25,7 @@ namespace BanHangSieuThi.GUI
             showDataView();
             showDataItem();
             hideButton();
+            cart = new Cart();
         }
         private void hideButton()
         {
@@ -101,6 +104,12 @@ namespace BanHangSieuThi.GUI
                 btn_addToCart.Enabled = true;
                 idItemSelected = showSp.Rows[e.RowIndex].Cells[0].Value.ToString();
             }
+        }
+
+        private void btn_addToCart_Click(object sender, EventArgs e)
+        {
+
+            cart.Add()
         }
     }
 }
