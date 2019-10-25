@@ -33,26 +33,31 @@ namespace BanHangSieuThi.Object
         }
         public void Add(DataTable data)
         {
+           
             for (int i = 0; i < data.Rows.Count; i++)
             {
+               
                 Product temp = new Product();
                 temp.Id = data.Rows[i]["MaSP"].ToString().Trim();
                 temp.Name = data.Rows[i]["TenSP"].ToString().Trim();
                 temp.Count = 0;
-                this._listItem.Add(temp);
+                ListItem.Add(temp);
             }
+          
+
         }
-        public Cart (DataTable data)
+        public DataTable Get()
         {
-            for(int i = 0;i < data.Rows.Count; i++)
+            DataTable data = new DataTable("Product");
+            data.Columns.Add("MaSP", typeof(string));
+            data.Columns.Add("TenSP", typeof(string));
+            data.Columns.Add("Cout", typeof(string));
+            foreach (Product product in ListItem)
             {
-                Product temp = new Product();
-                temp.Id = data.Rows[i]["MaSP"].ToString().Trim();
-                temp.Name = data.Rows[i]["TenSP"].ToString().Trim();
-                temp.Count = 0;
-                this._listItem.Add(temp);
+                data.Rows.Add(product.Id, product.Name, product.Count);
             }
 
+            return data;
         }
     }
 }

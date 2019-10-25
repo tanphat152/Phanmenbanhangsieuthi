@@ -21,6 +21,9 @@ namespace BanHangSieuThi.GUI
         public frombanhang()
         {
             InitializeComponent();
+            QuyTrinhBanHang.SizeMode = TabSizeMode.Fixed;
+            QuyTrinhBanHang.Appearance = TabAppearance.FlatButtons;
+            QuyTrinhBanHang.ItemSize = new Size(0, 1);
             addCheckBox();
             showDataView();
             showDataItem();
@@ -104,8 +107,8 @@ namespace BanHangSieuThi.GUI
         {
             string query = "SELECT MaSP, TenSP,MaLH,SoLuong,GiaBan,MoTa,NSX FROM tblSanPham";
             loadData(query, showSp);
-            string querySelected = "SELECT TenSP FROM tblSanPham where NSX like 'Dell'";
-            loadData(querySelected, showCart);
+            //string querySelected = "SELECT TenSP FROM tblSanPham where NSX like 'Dell'";
+            //loadData(querySelected, showCart);
         }
 
 
@@ -126,11 +129,12 @@ namespace BanHangSieuThi.GUI
             string query = "SELECT MaSP,TenSP FROM tblSanPham WHERE MaSP LIKE '"+ idItemSelected + "'" ;
             DataTable data = loadData(query);
             cart.Add(data);
+            reloadDataGridViewShowCart(cart.Get());
 
         }
-        private void reloadDataGridViewShowCart()
+        private void reloadDataGridViewShowCart(DataTable data)
         {
-
+            showCart.DataSource = data;
         }
     }
 }
