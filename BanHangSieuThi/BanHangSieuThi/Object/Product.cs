@@ -10,13 +10,13 @@ namespace BanHangSieuThi.Object
     {
         string _id;
         string _name;
-        string _count;
+        int _count;
 
         public Product()
         {
         }
 
-        public Product(string id, string name, string count)
+        public Product(string id, string name, int count)
         {
             _id = id;
             _name = name;
@@ -29,6 +29,6 @@ namespace BanHangSieuThi.Object
 
         public string Id { get => _id; set => _id = value; }
         public string Name { get => _name; set => _name = value; }
-        public string Count { get => _count; set => _count = value; }
+        public int Count { get => _count; set => _count = value; }
     }
 }

@@ -31,12 +31,28 @@ namespace BanHangSieuThi.Object
         {
             this._listItem.Add(us);
         }
+        public void Add(DataTable data)
+        {
+            for (int i = 0; i < data.Rows.Count; i++)
+            {
+                Product temp = new Product();
+                temp.Id = data.Rows[i]["MaSP"].ToString().Trim();
+                temp.Name = data.Rows[i]["TenSP"].ToString().Trim();
+                temp.Count = 0;
+                this._listItem.Add(temp);
+            }
+        }
         public Cart (DataTable data)
         {
             for(int i = 0;i < data.Rows.Count; i++)
             {
                 Product temp = new Product();
+                temp.Id = data.Rows[i]["MaSP"].ToString().Trim();
+                temp.Name = data.Rows[i]["TenSP"].ToString().Trim();
+                temp.Count = 0;
+                this._listItem.Add(temp);
             }
+
         }
     }
 }

@@ -64,7 +64,7 @@ namespace BanHangSieuThi.GUI
             }
             dataView.DataSource = data.Tables[0];
         }
-        private DataSet loadData(string query)
+        private DataTable loadData(string query)
         {
             DataSet data = new DataSet();
             ConnectString b = new ConnectString();
@@ -77,7 +77,7 @@ namespace BanHangSieuThi.GUI
                 apter.Fill(data);
                 connect.Close();
             }
-            return data;
+            return data.Tables[0];
         }
         //show data for view type and ncc
         private void showDataView()
@@ -105,7 +105,7 @@ namespace BanHangSieuThi.GUI
             string query = "SELECT MaSP, TenSP,MaLH,SoLuong,GiaBan,MoTa,NSX FROM tblSanPham";
             loadData(query, showSp);
             string querySelected = "SELECT TenSP FROM tblSanPham where NSX like 'Dell'";
-            loadData(querySelected, showItemSelected);
+            loadData(querySelected, showCart);
         }
 
 
@@ -124,8 +124,13 @@ namespace BanHangSieuThi.GUI
         private void btn_addToCart_Click(object sender, EventArgs e)
         {
             string query = "SELECT MaSP,TenSP FROM tblSanPham WHERE MaSP LIKE '"+ idItemSelected + "'" ;
-            DataSet data = loadData(query);
-           
+            DataTable data = loadData(query);
+            cart.Add(data);
+
+        }
+        private void reloadDataGridViewShowCart()
+        {
+
         }
     }
 }
