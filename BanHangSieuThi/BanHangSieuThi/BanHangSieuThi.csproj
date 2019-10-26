@@ -155,6 +155,9 @@
     <EmbeddedResource Include="GUI\huongdan.resx">
       <DependentUpon>huongdan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\thongke.resx">
+      <DependentUpon>thongke.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\BanHangSieuThi.GUI.frmKhachhang.resources" />
     <EmbeddedResource Include="obj\Debug\BanHangSieuThi.GUI.frmMain.resources" />
     <EmbeddedResource Include="obj\Debug\BanHangSieuThi.Properties.Resources.resources" />
