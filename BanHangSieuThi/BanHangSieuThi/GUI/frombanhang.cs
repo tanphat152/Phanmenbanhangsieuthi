@@ -36,10 +36,12 @@ namespace BanHangSieuThi.GUI
             btn_removeItem.Enabled = false;
             btn_removeCart.Enabled = false;
             btn_nextNTT.Enabled = false;
+            btn_NBH.Enabled = false;
         }
         private void btn_nextNTT_Click(object sender, EventArgs e)
         {
             QuyTrinhBanHang.SelectedTab = tab2;
+            reloadDataGridViewShowCart(cart.Get(), showCartOIFE);
         }
 
         private void btn_NBH_Click(object sender, EventArgs e)
@@ -113,28 +115,49 @@ namespace BanHangSieuThi.GUI
 
 
         #region action for datagridview
-
-        #endregion
         private void showSp_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           if(e.RowIndex > 0)
+            if (e.RowIndex > 0)
             {
+
                 btn_addToCart.Enabled = true;
                 idItemSelected = showSp.Rows[e.RowIndex].Cells[0].Value.ToString();
             }
         }
+        #endregion
 
+        #region action for tab chosse items
         private void btn_addToCart_Click(object sender, EventArgs e)
         {
-            string query = "SELECT MaSP,TenSP FROM tblSanPham WHERE MaSP LIKE '"+ idItemSelected + "'" ;
-            DataTable data = loadData(query);
-            cart.Add(data);
-            reloadDataGridViewShowCart(cart.Get());
-
+            if (cart!= null)
+            {
+                string query = "SELECT MaSP,TenSP FROM tblSanPham WHERE MaSP LIKE '" + idItemSelected + "'";
+                DataTable data = loadData(query);
+                Product product = new Product(data);
+                cart.AddToList(product);
+                reloadDataGridViewShowCart(cart.Get(), showCart);
+                btn_removeCart.Enabled = true;
+                btn_nextNTT.Enabled = true;
+            }
+            else
+            {
+                btn_removeCart.Enabled = false;
+                btn_nextNTT.Enabled = false;
+            }
         }
-        private void reloadDataGridViewShowCart(DataTable data)
+        private void reloadDataGridViewShowCart(DataTable data,GunaDataGridView dtgv)
         {
-            showCart.DataSource = data;
+            dtgv.DataSource = data;
         }
+
+        private void btn_removeCart_Click(object sender, EventArgs e)
+        {
+            cart.Clear();
+            reloadDataGridViewShowCart(cart.Get(), showCart);
+            btn_removeCart.Enabled = false;
+        }
+        #endregion
+        #region action for tab choose employment
+        #endregion
     }
 }

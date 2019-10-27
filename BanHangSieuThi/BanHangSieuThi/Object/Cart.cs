@@ -4,20 +4,21 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BanHangSieuThi.Object
 {
     class Cart
     {
-        List<Product> _listItem;
+        List<Product> _listItem = new List<Product>();
         public Cart()
         {
-
+           
         }
 
         public Cart(List<Product> listItem)
         {
-            _listItem = listItem;
+            this._listItem = listItem;
         }
 
         ~Cart()
@@ -33,7 +34,6 @@ namespace BanHangSieuThi.Object
         }
         public void Add(DataTable data)
         {
-           
             for (int i = 0; i < data.Rows.Count; i++)
             {
                
@@ -41,10 +41,34 @@ namespace BanHangSieuThi.Object
                 temp.Id = data.Rows[i]["MaSP"].ToString().Trim();
                 temp.Name = data.Rows[i]["TenSP"].ToString().Trim();
                 temp.Count = 0;
-                ListItem.Add(temp);
+                this._listItem.Add(temp);
             }
-          
-
+        }
+        private int CheckCount(Product us)
+        {
+            int i = 0;
+            foreach (Product product in ListItem)
+            {
+                if (product.Id == us.Id) return i;
+                i++;
+            }
+            return -1;
+        }
+        public void AddToList(Product us)
+        {
+            int check = CheckCount(us);
+            if(check >= 0)
+            {
+                this._listItem[check].Count++;
+            }
+            else
+            {
+                this._listItem.Add(us);
+            }
+        }
+        public void Clear()
+        {
+            this.ListItem.Clear();
         }
         public DataTable Get()
         {
@@ -59,5 +83,6 @@ namespace BanHangSieuThi.Object
 
             return data;
         }
+        
     }
 }

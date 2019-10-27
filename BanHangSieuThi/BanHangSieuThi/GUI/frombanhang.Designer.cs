@@ -44,6 +44,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.QuyTrinhBanHang = new System.Windows.Forms.TabControl();
             this.tab1 = new System.Windows.Forms.TabPage();
             this.btn_removeCart = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -60,6 +63,8 @@
             this.showType = new Guna.UI.WinForms.GunaDataGridView();
             this.btn_nextNTT = new Guna.UI.WinForms.GunaAdvenceButton();
             this.tab2 = new System.Windows.Forms.TabPage();
+            this.gunaGroupBox4 = new Guna.UI.WinForms.GunaGroupBox();
+            this.showCartOIFE = new Guna.UI.WinForms.GunaDataGridView();
             this.btn_NBH = new Guna.UI.WinForms.GunaAdvenceButton();
             this.tab3 = new System.Windows.Forms.TabPage();
             this.showDataRoom = new Guna.UI.WinForms.GunaDataGridView();
@@ -74,6 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.showNCC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.showType)).BeginInit();
             this.tab2.SuspendLayout();
+            this.gunaGroupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showCartOIFE)).BeginInit();
             this.tab3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showDataRoom)).BeginInit();
             this.SuspendLayout();
@@ -93,6 +100,7 @@
             // 
             // tab1
             // 
+            this.tab1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
             this.tab1.Controls.Add(this.btn_removeCart);
             this.tab1.Controls.Add(this.btn_removeItem);
             this.tab1.Controls.Add(this.btn_addToCart);
@@ -107,7 +115,6 @@
             this.tab1.Size = new System.Drawing.Size(987, 577);
             this.tab1.TabIndex = 0;
             this.tab1.Text = "ChonMua";
-            this.tab1.UseVisualStyleBackColor = true;
             // 
             // btn_removeCart
             // 
@@ -140,6 +147,7 @@
             this.btn_removeCart.TabIndex = 39;
             this.btn_removeCart.Text = "Hủy giỏ hàng";
             this.btn_removeCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_removeCart.Click += new System.EventHandler(this.btn_removeCart_Click);
             // 
             // btn_removeItem
             // 
@@ -591,6 +599,8 @@
             // 
             // tab2
             // 
+            this.tab2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
+            this.tab2.Controls.Add(this.gunaGroupBox4);
             this.tab2.Controls.Add(this.btn_NBH);
             this.tab2.Location = new System.Drawing.Point(4, 22);
             this.tab2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -599,7 +609,92 @@
             this.tab2.Size = new System.Drawing.Size(987, 577);
             this.tab2.TabIndex = 1;
             this.tab2.Text = "NhapThongTinKH";
-            this.tab2.UseVisualStyleBackColor = true;
+            // 
+            // gunaGroupBox4
+            // 
+            this.gunaGroupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaGroupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
+            this.gunaGroupBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
+            this.gunaGroupBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
+            this.gunaGroupBox4.BorderSize = 1;
+            this.gunaGroupBox4.Controls.Add(this.showCartOIFE);
+            this.gunaGroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaGroupBox4.ForeColor = System.Drawing.Color.White;
+            this.gunaGroupBox4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
+            this.gunaGroupBox4.Location = new System.Drawing.Point(29, 258);
+            this.gunaGroupBox4.Name = "gunaGroupBox4";
+            this.gunaGroupBox4.Size = new System.Drawing.Size(940, 258);
+            this.gunaGroupBox4.TabIndex = 37;
+            this.gunaGroupBox4.Text = "Giỏ hàng";
+            this.gunaGroupBox4.TextLocation = new System.Drawing.Point(10, 5);
+            // 
+            // showCartOIFE
+            // 
+            this.showCartOIFE.AllowUserToAddRows = false;
+            this.showCartOIFE.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.showCartOIFE.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.showCartOIFE.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.showCartOIFE.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.showCartOIFE.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.showCartOIFE.BackgroundColor = System.Drawing.Color.White;
+            this.showCartOIFE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.showCartOIFE.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.showCartOIFE.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.showCartOIFE.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.showCartOIFE.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.showCartOIFE.DefaultCellStyle = dataGridViewCellStyle15;
+            this.showCartOIFE.EnableHeadersVisualStyles = false;
+            this.showCartOIFE.GridColor = System.Drawing.Color.White;
+            this.showCartOIFE.Location = new System.Drawing.Point(5, 24);
+            this.showCartOIFE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.showCartOIFE.Name = "showCartOIFE";
+            this.showCartOIFE.ReadOnly = true;
+            this.showCartOIFE.RowHeadersVisible = false;
+            this.showCartOIFE.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.showCartOIFE.RowTemplate.Height = 24;
+            this.showCartOIFE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.showCartOIFE.Size = new System.Drawing.Size(928, 229);
+            this.showCartOIFE.TabIndex = 33;
+            this.showCartOIFE.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.showCartOIFE.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.showCartOIFE.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.showCartOIFE.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.showCartOIFE.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.showCartOIFE.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.showCartOIFE.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.showCartOIFE.ThemeStyle.GridColor = System.Drawing.Color.White;
+            this.showCartOIFE.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.showCartOIFE.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.showCartOIFE.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCartOIFE.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.showCartOIFE.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.showCartOIFE.ThemeStyle.HeaderStyle.Height = 25;
+            this.showCartOIFE.ThemeStyle.ReadOnly = true;
+            this.showCartOIFE.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.showCartOIFE.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.showCartOIFE.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCartOIFE.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.showCartOIFE.ThemeStyle.RowsStyle.Height = 24;
+            this.showCartOIFE.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
+            this.showCartOIFE.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // btn_NBH
             // 
@@ -651,31 +746,31 @@
             // 
             this.showDataRoom.AllowUserToAddRows = false;
             this.showDataRoom.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.showDataRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.showDataRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.showDataRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.showDataRoom.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.showDataRoom.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.showDataRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showDataRoom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.showDataRoom.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.showDataRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.showDataRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.showDataRoom.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.showDataRoom.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.showDataRoom.DefaultCellStyle = dataGridViewCellStyle18;
             this.showDataRoom.EnableHeadersVisualStyles = false;
             this.showDataRoom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.showDataRoom.Location = new System.Drawing.Point(412, 92);
@@ -764,6 +859,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.showNCC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.showType)).EndInit();
             this.tab2.ResumeLayout(false);
+            this.gunaGroupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.showCartOIFE)).EndInit();
             this.tab3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.showDataRoom)).EndInit();
             this.ResumeLayout(false);
@@ -792,5 +889,7 @@
         private Guna.UI.WinForms.GunaAdvenceButton btn_removeItem;
         private Guna.UI.WinForms.GunaAdvenceButton btn_addToCart;
         private Guna.UI.WinForms.GunaAdvenceButton btn_removeCart;
+        private Guna.UI.WinForms.GunaGroupBox gunaGroupBox4;
+        private Guna.UI.WinForms.GunaDataGridView showCartOIFE;
     }
 }
