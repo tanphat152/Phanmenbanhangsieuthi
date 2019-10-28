@@ -21,8 +21,7 @@ namespace BanHangSieuThi.GUI
 
         private void btnNhanvien_Click(object sender, EventArgs e)
         {
-            frmAddNhanvien frm = new frmAddNhanvien();
-            frm.Show();
+          
         }
         SqlConnection connection;
         SqlCommand cmd;
