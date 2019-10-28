@@ -26,7 +26,7 @@ namespace BanHangSieuThi.GUI
         public void LoadData()
         {
             cmd.Connection.CreateCommand();
-            cmd.CommandText = ( "SELECT TenNV,TenDn,DiaChi,GT,SDT FROM dbo.tblNhanVien");
+            cmd.CommandText = ( "SELECT TenNV as Hoten,TenDn as TenDangNhap ,DiaChi as Diachi,GT as GT,SDT as SDT FROM dbo.tblNhanVien");
             adap.SelectCommand = cmd;
             table.Clear();
             adap.Fill(table);

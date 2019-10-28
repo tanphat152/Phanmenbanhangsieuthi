@@ -21,8 +21,25 @@ namespace BanHangSieuThi.GUI
 
         private void btnNhanvien_Click(object sender, EventArgs e)
         {
-            frmAddNhanvien frm = new frmAddNhanvien();
-            frm.Show();
+            string hoten = gunaTxtTen.Text;
+            string tendn = gunaTxtDiachi.Text;
+            string diachi = gunaTxtDiachi.Text;
+            string gioitinh;
+            if(gunaCheckBoxNam.Checked == true)
+            {
+                gioitinh = "Nam";
+            }
+            else
+            {
+                gioitinh = "Nữ";
+            }
+            string sdt = gunaTxtSdt.Text;
+            if(hoten =="" || tendn =="")
+            {
+                MessageBox.Show("vui lòng điền đầy đủ thông tin");
+                return;
+            }
+
         }
         SqlConnection connection;
         SqlCommand cmd;
@@ -32,7 +49,7 @@ namespace BanHangSieuThi.GUI
         public void LoadData()
         {
             cmd= connection.CreateCommand();
-            cmd.CommandText = "SELECT TenNV,TenDn,DiaChi,GT,SDT FROM dbo.tblNhanVien";
+            cmd.CommandText = "SELECT TenNV as Hoten,TenDn as TenDangNhap ,DiaChi as Diachi,GT as GT,SDT as SDT FROM dbo.tblNhanVien";
             adap.SelectCommand = cmd;
             table.Clear();
             adap.Fill(table);
@@ -47,6 +64,11 @@ namespace BanHangSieuThi.GUI
                 LoadData();
                 connection.Close();
             }
+        }
+
+        private void gunaCheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
