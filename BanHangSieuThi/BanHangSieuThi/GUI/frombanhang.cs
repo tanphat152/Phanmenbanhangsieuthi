@@ -37,6 +37,8 @@ namespace BanHangSieuThi.GUI
             btn_removeCart.Enabled = false;
             btn_nextNTT.Enabled = false;
             btn_NBH.Enabled = false;
+            checkTrueNBH.Checked = true;
+            checkFalseNBH.Checked = false;
         }
         private void btn_nextNTT_Click(object sender, EventArgs e)
         {
@@ -54,7 +56,9 @@ namespace BanHangSieuThi.GUI
 
         private void HoanThanh_Click(object sender, EventArgs e)
         {
-            QuyTrinhBanHang.SelectedTab = tab1;
+            MessageBox.Show("Đã mua thành công");
+            this.Close();
+
         }
         private void btn_BackChooseItem_Click(object sender, EventArgs e)
         {
@@ -162,12 +166,32 @@ namespace BanHangSieuThi.GUI
             reloadDataGridViewShowCart(cart.Get(), showCart);
             btn_removeCart.Enabled = false;
         }
+
         #endregion
 
         #region action for tab choose customer
-        
+
         #endregion
 
-       
+        #region action for tab choose customer
+
+      
+        private void checkTrueNBH_CheckedChanged(object sender, EventArgs e)
+        {
+            gunaGroupBox7.Enabled = true;
+            checkFalseNBH.Checked = false;
+        }
+        #endregion
+
+        private void checkFalseNBH_CheckedChanged(object sender, EventArgs e)
+        {
+            gunaGroupBox7.Enabled = false;
+            checkTrueNBH.Checked = false;
+        }
+
+        private void checkTrueNBH_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
