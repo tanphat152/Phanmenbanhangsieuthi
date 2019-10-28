@@ -42,7 +42,10 @@ namespace BanHangSieuThi.GUI
         {
             QuyTrinhBanHang.SelectedTab = tab2;
             reloadDataGridViewShowCart(cart.Get(), showCartOIFE);
+            txt_priceCart.Text = cart.GetPriceOfCart().ToString();
+            btn_NBH.Enabled = true;
         }
+        
 
         private void btn_NBH_Click(object sender, EventArgs e)
         {
@@ -53,7 +56,10 @@ namespace BanHangSieuThi.GUI
         {
             QuyTrinhBanHang.SelectedTab = tab1;
         }
-
+        private void btn_BackChooseItem_Click(object sender, EventArgs e)
+        {
+            QuyTrinhBanHang.SelectedTab = tab1;
+        }
         private void loadData(string query, GunaDataGridView dataView)
         {
             DataSet data = new DataSet();
@@ -131,7 +137,7 @@ namespace BanHangSieuThi.GUI
         {
             if (cart!= null)
             {
-                string query = "SELECT MaSP,TenSP FROM tblSanPham WHERE MaSP LIKE '" + idItemSelected + "'";
+                string query = "SELECT MaSP,TenSP, GiaBan FROM tblSanPham WHERE MaSP LIKE '" + idItemSelected + "'";
                 DataTable data = loadData(query);
                 Product product = new Product(data);
                 cart.AddToList(product);
@@ -157,7 +163,11 @@ namespace BanHangSieuThi.GUI
             btn_removeCart.Enabled = false;
         }
         #endregion
-        #region action for tab choose employment
+
+        #region action for tab choose customer
+        
         #endregion
+
+       
     }
 }
