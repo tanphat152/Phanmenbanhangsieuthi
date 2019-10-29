@@ -19,8 +19,15 @@ namespace BanHangSieuThi.GUI
             InitializeComponent();
         }
 
-        private void btnNhanvien_Click(object sender, EventArgs e)
+        private void btnaddNhanvien_Click(object sender, EventArgs e)
         {
+            gunaTxtTen.Enabled = true;
+            gunaTxtTdn.Enabled = true;
+            gunaTxtDiachi.Enabled = true;
+            gunaTxtSdt.Enabled = true;
+            gunaCheckBoxNam.Enabled = true;
+            gunaCheckBoxNu.Enabled = true;
+            gunaTxtMatkhau.Enabled = true;
             string hoten = gunaTxtTen.Text;
             string tendn = gunaTxtDiachi.Text;
             string diachi = gunaTxtDiachi.Text;
@@ -39,7 +46,10 @@ namespace BanHangSieuThi.GUI
                 MessageBox.Show("vui lòng điền đầy đủ thông tin");
                 return;
             }
+            else
+            {
 
+            }
         }
         SqlConnection connection;
         SqlCommand cmd;
@@ -58,6 +68,13 @@ namespace BanHangSieuThi.GUI
 
         private void formnhanvien_Load(object sender, EventArgs e)
         {
+            gunaTxtTen.Enabled = false;
+            gunaTxtTdn.Enabled = false;
+            gunaTxtDiachi.Enabled = false;
+            gunaTxtSdt.Enabled = false;
+            gunaCheckBoxNam.Enabled = false;
+            gunaCheckBoxNu.Enabled = false;
+            gunaTxtMatkhau.Enabled = false;
             using (connection = new SqlConnection(connectStr.getConnectionString(0)))
             {
                 connection.Open();
@@ -68,6 +85,28 @@ namespace BanHangSieuThi.GUI
 
         private void gunaCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void gunaLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = gunaDataGridView1.CurrentRow.Index;
+            gunaTxtTen.Text = gunaDataGridView1.Rows[i].Cells[0].Value.ToString();
+            gunaTxtTdn.Text = gunaDataGridView1.Rows[i].Cells[1].Value.ToString();
+            gunaTxtDiachi.Text = gunaDataGridView1.Rows[i].Cells[2].Value.ToString();
+            if (gunaDataGridView1.Rows[i].Cells[3].Value.ToString() == "Nam")
+            {
+                gunaCheckBoxNam.Checked = true;
+            }
+            else gunaCheckBoxNu.Checked = false;
+            gunaTxtSdt.Text = gunaDataGridView1.Rows[i].Cells[4].Value.ToString();
+            gunaTxtMatkhau.Text = gunaDataGridView1.Rows[i].Cells[5].Value.ToString();
 
         }
     }

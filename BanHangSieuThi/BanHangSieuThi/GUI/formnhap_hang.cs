@@ -103,7 +103,7 @@ namespace BanHangSieuThi.GUI
 
         private void gunaBtXoa_Click(object sender, EventArgs e)
         {
-            using (connection = new SqlConnection(connectStr.getConnectionString(1)))
+            using (connection = new SqlConnection(connectStr.getConnectionString(0)))
             {
                 connection.Open();
                 cmd = connection.CreateCommand();
