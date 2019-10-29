@@ -307,7 +307,6 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý bàn hàng siêu thi";
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.btnNhaphang.ResumeLayout(false);
             this.gunaPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
