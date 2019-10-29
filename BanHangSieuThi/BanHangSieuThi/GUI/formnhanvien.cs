@@ -58,7 +58,7 @@ namespace BanHangSieuThi.GUI
 
         private void formnhanvien_Load(object sender, EventArgs e)
         {
-            using (connection = new SqlConnection(connectStr.getConnectionString(0)))
+            using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
             {
                 connection.Open();
                 LoadData();

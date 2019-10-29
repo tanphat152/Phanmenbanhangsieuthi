@@ -46,7 +46,7 @@ namespace BanHangSieuThi.GUI
             guTbMoTa.Enabled = false;
             guTbNXS.Enabled = false;
             gunaBtSua.Enabled = false;
-            using (connection = new SqlConnection(connectStr.getConnectionString(0)))
+            using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
             {
                 connection.Open();
                 LoadData();
@@ -103,7 +103,7 @@ namespace BanHangSieuThi.GUI
 
         private void gunaBtXoa_Click(object sender, EventArgs e)
         {
-            using (connection = new SqlConnection(connectStr.getConnectionString(1)))
+            using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
             {
                 connection.Open();
                 cmd = connection.CreateCommand();
@@ -126,7 +126,7 @@ namespace BanHangSieuThi.GUI
         {
             if (dem == 1)
             {
-                using (connection = new SqlConnection(connectStr.getConnectionString(1)))
+                using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
                 {
                     connection.Open();
                     cmd = connection.CreateCommand();
@@ -149,7 +149,7 @@ namespace BanHangSieuThi.GUI
             if (dem == 2)
             {
   
-                using (connection = new SqlConnection(connectStr.getConnectionString(1)))
+                using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
                 {
                     connection.Open();
                     cmd = connection.CreateCommand();
@@ -201,6 +201,22 @@ namespace BanHangSieuThi.GUI
             guTbLoiNhuanSP.Text = "";
             guTbMoTa.Text = "";
             guTbNXS.Text = "";
+        }
+
+        private void gunaDataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = gunaDataGridView1.CurrentRow.Index;
+            guTbMaSP.Text = gunaDataGridView1.Rows[i].Cells[0].Value.ToString();
+            guTbTenSP.Text = gunaDataGridView1.Rows[i].Cells[1].Value.ToString();
+            guTbLoaiSP.Text = gunaDataGridView1.Rows[i].Cells[2].Value.ToString();
+            guTbSLSP.Text = gunaDataGridView1.Rows[i].Cells[3].Value.ToString();
+            guTbGiaNhapSP.Text = gunaDataGridView1.Rows[i].Cells[4].Value.ToString();
+            guTbGiaBanSP.Text = gunaDataGridView1.Rows[i].Cells[5].Value.ToString();
+            guTbLoiNhuanSP.Text = gunaDataGridView1.Rows[i].Cells[6].Value.ToString();
+            guTbMoTa.Text = gunaDataGridView1.Rows[i].Cells[7].Value.ToString();
+            guTbNXS.Text = gunaDataGridView1.Rows[i].Cells[8].Value.ToString();
+            gunaBtSua.Enabled = true;
         }
     }
 }

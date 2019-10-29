@@ -17,14 +17,14 @@ namespace BanHangSieuThi.DataAccess
             }
             else
             {
-                return @"Data Source=DESKTOP-LQQ51RU\SON" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=BanHangSieuThi;Integrated Security=True";
+                return @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=BanHangSieuThi;Integrated Security=True";
             }
         }
         public int checkCnn()
         {
             try
             {
-                string temp = @"Data Source=DESKTOP-LQQ51RU\SON" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=BanHangSieuThi;Integrated Security=True";
+                string temp = @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=BanHangSieuThi;Integrated Security=True";
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
