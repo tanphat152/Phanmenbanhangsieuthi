@@ -32,6 +32,7 @@ namespace BanHangSieuThi.GUI
             table.Clear();
             adap.Fill(table);
             gunaDataGridView1.DataSource = table;
+            
 
         }
         private void formnhap_hang_Load(object sender, EventArgs e)
