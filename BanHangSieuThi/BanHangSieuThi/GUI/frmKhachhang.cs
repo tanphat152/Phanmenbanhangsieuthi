@@ -338,5 +338,25 @@ namespace BanHangSieuThi.GUI
             sua_btx.Enabled = true;
             xoa_btx.Enabled = true;
         }
+
+        private void txt_seasch_TextChanged(object sender, EventArgs e)
+        {
+            string query = "SELECT MaKH AS 'Mã',TenKH 'Họ tên',GT AS 'Giới tính',DiaChi as 'Địa chỉ',SDT AS 'SĐT',LoaiKH AS 'Xếp loại', GhiChu AS 'Ghi chú' FROM dbo.tblKhachHang" +
+               " where dbo.tblKhachHang.TenKH like N'%" + txt_seasch.Text + "%'" + " OR DiaChi  LIKE N'%" + txt_seasch.Text + "%'" + " OR LoaiKH LIKE N'%" + txt_seasch.Text + "%'" + " OR GhiChu LIKE N'%" + txt_seasch.Text + "%'" +  " OR MaKH LIKE '%" + txt_seasch.Text + "%'";
+
+
+            showSp.Columns.Clear();
+            ConnectString b = new ConnectString();
+            string con = b.getConnectionString(fromdangnhap.checkConnectionString);
+            using (SqlConnection conn = new SqlConnection(con))
+            {
+                conn.Open();
+                DataSet data = new DataSet();
+                SqlDataAdapter adap = new SqlDataAdapter(query, conn);
+                adap.Fill(data);
+                showSp.DataSource = data.Tables[0];
+                conn.Close();
+            }
+        }
     }
 }
