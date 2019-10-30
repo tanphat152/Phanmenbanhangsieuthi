@@ -109,6 +109,9 @@ namespace BanHangSieuThi.GUI
             frmKhachhang.them = 1;
             frmKhachhang.sua = 0;
             frmKhachhang.xoa = 0;
+            them_btx.Enabled = true;
+            sua_btx.Enabled = false;
+            xoa_btx.Enabled = false;
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -130,13 +133,13 @@ namespace BanHangSieuThi.GUI
                 }
 
             }
-            /*
+            
             if (frmKhachhang.sua == 1)
             {
                 int check = upDate();
                 if (check == 1)
                 {
-                    bunifuFlatButton2.Enabled = true;
+                    them_btx.Enabled = true;
                     sua_btx.Enabled = true;
                     xoa_btx.Enabled = true;
                     MessageBox.Show("Sửa thành công!");
@@ -148,15 +151,16 @@ namespace BanHangSieuThi.GUI
                 }
 
             }
+            /*
             if (frmKhachhang.xoa == 1)
             {
 
-                DialogResult res = MessageBox.Show("Bạn có thực sự muốn xóa bạn đọc có mã là" + frmManagerialCustomer.IDcart.TrimEnd(), "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult res = MessageBox.Show("Bạn có thực sự muốn xóa khach hang có mã là" + frmKhachhang.ID.TrimEnd(), "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (res == DialogResult.Yes)
                 {
-                    delete(frmManagerialCustomer.IDcart);
+                    delete(frmKhachhang.ID);
                     showdata();
-                    bunifuFlatButton2.Enabled = true;
+                    them_btx.Enabled = true;
                     sua_btx.Enabled = true;
                     xoa_btx.Enabled = true;
                 }
@@ -218,9 +222,32 @@ namespace BanHangSieuThi.GUI
 
         private void xoa_btx_Click(object sender, EventArgs e)
         {
+            grop1.Enabled = false;
+            them_btx.Enabled = false;
+            sua_btx.Enabled = false;
+            xoa_btx.Enabled = true;
             frmKhachhang.them = 0;
             frmKhachhang.sua = 0;
             frmKhachhang.xoa = 1;
+            DialogResult res = MessageBox.Show("Bạn có thực sự muốn xóa khach hang có mã là" + frmKhachhang.ID.TrimEnd(), "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (res == DialogResult.Yes)
+            {
+                delete(frmKhachhang.ID);
+                showdata();
+                them_btx.Enabled = true;
+                sua_btx.Enabled = true;
+                xoa_btx.Enabled = true;
+                txt_ma.Text = "";
+                txt_type.Text = "";
+                txt_ghichu.Text = "";
+                txt_ten.Text = "";
+                txt_sdt.Text = "";
+                txt_diachi.Text = "";
+            }
+            if (res == DialogResult.No)
+            {
+
+            }
         }
 
         private void sua_btx_Click(object sender, EventArgs e)
@@ -230,6 +257,86 @@ namespace BanHangSieuThi.GUI
             frmKhachhang.them = 0;
             frmKhachhang.sua = 1;
             frmKhachhang.xoa = 0;
+
+            them_btx.Enabled = false;
+            sua_btx.Enabled = true;
+            xoa_btx.Enabled = false;
+        }
+        public int upDate()
+        {
+            string ma = txt_ma.Text;
+            string name = txt_ten.Text;
+            string sdt = txt_sdt.Text;
+            string Diachi = txt_diachi.Text;
+            string gioitinh;
+            if (check_nam.Checked == true)
+            {
+                gioitinh = "Nam";
+            }
+            else
+            {
+                gioitinh = "Nữ";
+            }
+            string type = txt_type.Text;
+            string ghichu = txt_ghichu.Text;
+            string query = "UPDATE dbo.tblKhachHang SET TenKH=@name,GT=@gt,DiaChi=@dc,SDT=@sdt,LoaiKH=@type,GhiChu=@ghichu WHERE MaKH=@ma";
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(fromdangnhap.checkConnectionString);
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(con))
+                {
+                    connection.Open();
+
+                    SqlCommand cmd = connection.CreateCommand();
+                    cmd.CommandText = query;
+                    // insert value of Song in database
+                    cmd.Parameters.Add("@ma", SqlDbType.VarChar).Value = ma;
+                    cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = name;
+                    cmd.Parameters.Add("@type", SqlDbType.NVarChar).Value = type;
+                    cmd.Parameters.Add("@sdt", SqlDbType.NVarChar).Value = sdt;
+                    cmd.Parameters.Add("@gt", SqlDbType.NVarChar).Value = gioitinh;
+                    cmd.Parameters.Add("@dc", SqlDbType.NVarChar).Value = Diachi;
+                    cmd.Parameters.Add("@ghichu", SqlDbType.NText).Value = ghichu;
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                    return 1;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại!");
+                return 0;
+            }
+        }
+        public void delete(string key)
+        {
+            string query1 = "DELETE	FROM dbo.tblKhachHang WHERE MaKH=  @ID";
+            ConnectString b = new ConnectString();
+            string con = b.getConnectionString(fromdangnhap.checkConnectionString);
+            using (SqlConnection connection = new SqlConnection(con))
+            {
+                connection.Open();
+
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandText = query1;
+                cmd.Parameters.Add("@ID", SqlDbType.NVarChar).Value = key;
+                cmd.ExecuteNonQuery();
+                connection.Close();
+
+            }
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            grop1.Enabled = false;
+            frmKhachhang.them = 0;
+            frmKhachhang.sua = 0;
+            frmKhachhang.xoa = 0;
+            them_btx.Enabled = true;
+            sua_btx.Enabled = true;
+            xoa_btx.Enabled = true;
         }
     }
 }
