@@ -54,6 +54,8 @@ namespace BanHangSieuThi.GUI
             table.Clear();
             adap.Fill(table);
             gunaDataGridView1.DataSource = table;
+
+                
         }
 
         private void formnhanvien_Load(object sender, EventArgs e)
@@ -132,7 +134,9 @@ namespace BanHangSieuThi.GUI
             if (check == 1)
             {
                 MessageBox.Show("Thêm thành công!");
+                connection.Open();
                 LoadData();
+                connection.Close();
             }
             else
             {
