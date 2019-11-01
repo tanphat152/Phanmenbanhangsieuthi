@@ -17,29 +17,29 @@ namespace BanHangSieuThi.GUI
         public formnhanvien()
         {
             InitializeComponent();
+            LockALL();
         }
 
+        public void LockALL()
+        {
+            gunaTxtTen.Enabled = false;
+            gunaTxtDiachi.Enabled = false;
+            gunaTxtSdt.Enabled = false;
+            gunaTxtTdn.Enabled = false;
+            gunabtnSave.Enabled = false; 
+        }
+        public void unLockALL()
+        {
+            gunaTxtTen.Enabled = true;
+            gunaTxtDiachi.Enabled = true;
+            gunaTxtSdt.Enabled = true;
+            gunaTxtTdn.Enabled = true;
+            gunabtnSave.Enabled = true;
+        }
         private void btnNhanvien_Click(object sender, EventArgs e)
         {
-            string hoten = gunaTxtTen.Text;
-            string tendn = gunaTxtDiachi.Text;
-            string diachi = gunaTxtDiachi.Text;
-            string gioitinh;
-            if(gunaCheckBoxNam.Checked == true)
-            {
-                gioitinh = "Nam";
-            }
-            else
-            {
-                gioitinh = "Nữ";
-            }
-            string sdt = gunaTxtSdt.Text;
-            if(hoten =="" || tendn =="")
-            {
-                MessageBox.Show("vui lòng điền đầy đủ thông tin");
-                return;
-            }
-
+            unLockALL();
+           
         }
         SqlConnection connection;
         SqlCommand cmd;
@@ -85,8 +85,10 @@ namespace BanHangSieuThi.GUI
 
         public int insert()
         {
+            
             string name = gunaTxtTen.Text;
             string sdt = gunaTxtSdt.Text;
+
             string Diachi = gunaTxtDiachi.Text;
             string gioitinh;
             if (gunaCheckBoxNam.Checked == true)
@@ -98,6 +100,11 @@ namespace BanHangSieuThi.GUI
                 gioitinh = "Nu";
             }
             string tendangnhap = gunaTxtTdn.Text;
+            if (name == "" || tendangnhap == "")
+            {
+                MessageBox.Show("vui lòng điền đầy đủ thông tin");
+                return 0 ;
+            }
             string query = " INSERT dbo.tblNhanVien( TenDn ,MatKhau ,TenNV ,GT ,DiaChi ,SDT) VALUES  (@tendangnhap ,  @matkhau , @name, @gt, @diachi, @sdt)";
             ConnectString cnn = new ConnectString();
             string con = cnn.getConnectionString(fromdangnhap.checkConnectionString);
@@ -142,6 +149,11 @@ namespace BanHangSieuThi.GUI
             {
 
             }
+
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
+        {
 
         }
     }
