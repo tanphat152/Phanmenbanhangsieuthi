@@ -31,9 +31,9 @@ namespace BanHangSieuThi.GUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formnhanvien));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
@@ -48,7 +48,7 @@ namespace BanHangSieuThi.GUI
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
-            this.btnBanhang = new Guna.UI.WinForms.GunaButton();
+            this.btnSuanhanvien = new Guna.UI.WinForms.GunaButton();
             this.btnNhanvien = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
@@ -132,7 +132,7 @@ namespace BanHangSieuThi.GUI
             this.gunaTxtSdt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTxtSdt.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTxtSdt.Location = new System.Drawing.Point(612, 36);
-            this.gunaTxtSdt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTxtSdt.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTxtSdt.Name = "gunaTxtSdt";
             this.gunaTxtSdt.PasswordChar = '\0';
             this.gunaTxtSdt.Size = new System.Drawing.Size(120, 30);
@@ -148,7 +148,7 @@ namespace BanHangSieuThi.GUI
             this.gunaTxtTdn.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTxtTdn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTxtTdn.Location = new System.Drawing.Point(104, 67);
-            this.gunaTxtTdn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTxtTdn.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTxtTdn.Name = "gunaTxtTdn";
             this.gunaTxtTdn.PasswordChar = '\0';
             this.gunaTxtTdn.Size = new System.Drawing.Size(128, 30);
@@ -164,7 +164,7 @@ namespace BanHangSieuThi.GUI
             this.gunaTxtDiachi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTxtDiachi.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTxtDiachi.Location = new System.Drawing.Point(366, 36);
-            this.gunaTxtDiachi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTxtDiachi.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTxtDiachi.Name = "gunaTxtDiachi";
             this.gunaTxtDiachi.PasswordChar = '\0';
             this.gunaTxtDiachi.Size = new System.Drawing.Size(120, 30);
@@ -180,7 +180,7 @@ namespace BanHangSieuThi.GUI
             this.gunaTxtTen.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTxtTen.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTxtTen.Location = new System.Drawing.Point(104, 36);
-            this.gunaTxtTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTxtTen.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTxtTen.Name = "gunaTxtTen";
             this.gunaTxtTen.PasswordChar = '\0';
             this.gunaTxtTen.Size = new System.Drawing.Size(128, 30);
@@ -192,10 +192,10 @@ namespace BanHangSieuThi.GUI
             this.btnNhaphang.Controls.Add(this.gunaButton2);
             this.btnNhaphang.Controls.Add(this.gunaButton1);
             this.btnNhaphang.Controls.Add(this.gunaButton4);
-            this.btnNhaphang.Controls.Add(this.btnBanhang);
+            this.btnNhaphang.Controls.Add(this.btnSuanhanvien);
             this.btnNhaphang.Controls.Add(this.btnNhanvien);
             this.btnNhaphang.Location = new System.Drawing.Point(26, 173);
-            this.btnNhaphang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNhaphang.Margin = new System.Windows.Forms.Padding(2);
             this.btnNhaphang.Name = "btnNhaphang";
             this.btnNhaphang.Size = new System.Drawing.Size(170, 349);
             this.btnNhaphang.TabIndex = 15;
@@ -213,7 +213,7 @@ namespace BanHangSieuThi.GUI
             this.gunaButton3.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton3.Image")));
             this.gunaButton3.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton3.Location = new System.Drawing.Point(0, 265);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -237,7 +237,7 @@ namespace BanHangSieuThi.GUI
             this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
             this.gunaButton2.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton2.Location = new System.Drawing.Point(0, 215);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -261,7 +261,7 @@ namespace BanHangSieuThi.GUI
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton1.Location = new System.Drawing.Point(2, 166);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -272,6 +272,7 @@ namespace BanHangSieuThi.GUI
             this.gunaButton1.TabIndex = 7;
             this.gunaButton1.Text = "Lưu dữ liệu";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gunaButton4
             // 
@@ -286,7 +287,7 @@ namespace BanHangSieuThi.GUI
             this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
             this.gunaButton4.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton4.Location = new System.Drawing.Point(2, 65);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -297,30 +298,30 @@ namespace BanHangSieuThi.GUI
             this.gunaButton4.TabIndex = 3;
             this.gunaButton4.Text = "Xóa Nhân viên";
             // 
-            // btnBanhang
+            // btnSuanhanvien
             // 
-            this.btnBanhang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnBanhang.AnimationHoverSpeed = 0.07F;
-            this.btnBanhang.AnimationSpeed = 0.03F;
-            this.btnBanhang.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnBanhang.BorderColor = System.Drawing.Color.Black;
-            this.btnBanhang.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBanhang.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBanhang.ForeColor = System.Drawing.Color.White;
-            this.btnBanhang.Image = ((System.Drawing.Image)(resources.GetObject("btnBanhang.Image")));
-            this.btnBanhang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBanhang.Location = new System.Drawing.Point(2, 115);
-            this.btnBanhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnBanhang.Name = "btnBanhang";
-            this.btnBanhang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnBanhang.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBanhang.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBanhang.OnHoverImage = null;
-            this.btnBanhang.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBanhang.Size = new System.Drawing.Size(165, 46);
-            this.btnBanhang.TabIndex = 2;
-            this.btnBanhang.Text = "Sửa Nhân viên";
-            this.btnBanhang.Click += new System.EventHandler(this.btnBanhang_Click);
+            this.btnSuanhanvien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSuanhanvien.AnimationHoverSpeed = 0.07F;
+            this.btnSuanhanvien.AnimationSpeed = 0.03F;
+            this.btnSuanhanvien.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnSuanhanvien.BorderColor = System.Drawing.Color.Black;
+            this.btnSuanhanvien.FocusedColor = System.Drawing.Color.Empty;
+            this.btnSuanhanvien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSuanhanvien.ForeColor = System.Drawing.Color.White;
+            this.btnSuanhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnSuanhanvien.Image")));
+            this.btnSuanhanvien.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSuanhanvien.Location = new System.Drawing.Point(2, 115);
+            this.btnSuanhanvien.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuanhanvien.Name = "btnSuanhanvien";
+            this.btnSuanhanvien.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnSuanhanvien.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnSuanhanvien.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSuanhanvien.OnHoverImage = null;
+            this.btnSuanhanvien.OnPressedColor = System.Drawing.Color.Black;
+            this.btnSuanhanvien.Size = new System.Drawing.Size(165, 46);
+            this.btnSuanhanvien.TabIndex = 2;
+            this.btnSuanhanvien.Text = "Sửa Nhân viên";
+            this.btnSuanhanvien.Click += new System.EventHandler(this.btnSuanhanvien_Click);
             // 
             // btnNhanvien
             // 
@@ -335,7 +336,7 @@ namespace BanHangSieuThi.GUI
             this.btnNhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnNhanvien.Image")));
             this.btnNhanvien.ImageSize = new System.Drawing.Size(30, 30);
             this.btnNhanvien.Location = new System.Drawing.Point(2, 12);
-            this.btnNhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.btnNhanvien.Name = "btnNhanvien";
             this.btnNhanvien.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnNhanvien.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -351,7 +352,7 @@ namespace BanHangSieuThi.GUI
             // 
             this.gunaPanel2.Controls.Add(this.gunaDataGridView1);
             this.gunaPanel2.Location = new System.Drawing.Point(215, 173);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.Size = new System.Drawing.Size(764, 384);
             this.gunaPanel2.TabIndex = 14;
@@ -360,8 +361,8 @@ namespace BanHangSieuThi.GUI
             // 
             this.gunaDataGridView1.AllowUserToAddRows = false;
             this.gunaDataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gunaDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -371,27 +372,27 @@ namespace BanHangSieuThi.GUI
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gunaDataGridView1.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.White;
             this.gunaDataGridView1.Location = new System.Drawing.Point(4, 4);
-            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.ReadOnly = true;
             this.gunaDataGridView1.RowHeadersVisible = false;
@@ -444,7 +445,7 @@ namespace BanHangSieuThi.GUI
             this.gunaTxtTimkiem.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTxtTimkiem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaTxtTimkiem.Location = new System.Drawing.Point(649, 134);
-            this.gunaTxtTimkiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaTxtTimkiem.Margin = new System.Windows.Forms.Padding(2);
             this.gunaTxtTimkiem.Name = "gunaTxtTimkiem";
             this.gunaTxtTimkiem.PasswordChar = '\0';
             this.gunaTxtTimkiem.Size = new System.Drawing.Size(158, 30);
@@ -465,7 +466,7 @@ namespace BanHangSieuThi.GUI
             this.gunaPanel1.Controls.Add(this.gunaTxtTen);
             this.gunaPanel1.Controls.Add(this.gunaLabel1);
             this.gunaPanel1.Location = new System.Drawing.Point(37, 10);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(942, 116);
             this.gunaPanel1.TabIndex = 13;
@@ -526,6 +527,7 @@ namespace BanHangSieuThi.GUI
             this.gunabtnSave.Size = new System.Drawing.Size(79, 42);
             this.gunabtnSave.TabIndex = 11;
             this.gunabtnSave.Text = "Save";
+            this.gunabtnSave.Click += new System.EventHandler(this.gunabtnSave_Click);
             // 
             // gunaBtnSearch
             // 
@@ -540,7 +542,7 @@ namespace BanHangSieuThi.GUI
             this.gunaBtnSearch.Image = ((System.Drawing.Image)(resources.GetObject("gunaBtnSearch.Image")));
             this.gunaBtnSearch.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaBtnSearch.Location = new System.Drawing.Point(829, 136);
-            this.gunaBtnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaBtnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.gunaBtnSearch.Name = "gunaBtnSearch";
             this.gunaBtnSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaBtnSearch.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -563,7 +565,7 @@ namespace BanHangSieuThi.GUI
             this.Controls.Add(this.gunaTxtTimkiem);
             this.Controls.Add(this.gunaPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "formnhanvien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản lý nhân viên";
@@ -579,10 +581,7 @@ namespace BanHangSieuThi.GUI
 
         }
 
-        private void btnBanhang_Click(object sender, EventArgs e)
-        {
-            
-        }
+    
 
         #endregion
 
@@ -602,7 +601,7 @@ namespace BanHangSieuThi.GUI
         private Guna.UI.WinForms.GunaButton gunaBtnSearch;
         private Guna.UI.WinForms.GunaTextBox gunaTxtTen;
         private Guna.UI.WinForms.GunaPanel btnNhaphang;
-        private Guna.UI.WinForms.GunaButton btnBanhang;
+        private Guna.UI.WinForms.GunaButton btnSuanhanvien;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaTextBox gunaTxtTimkiem;
