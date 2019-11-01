@@ -14,6 +14,7 @@ namespace BanHangSieuThi.GUI
 {  
     public partial class formnhanvien : Form
     {
+        public static string tdn;
         public formnhanvien()
         {
             InitializeComponent();
@@ -53,7 +54,7 @@ namespace BanHangSieuThi.GUI
             adap.SelectCommand = cmd;
             table.Clear();
             adap.Fill(table);
-            gunaDataGridView1.DataSource = table;
+            showData.DataSource = table;
 
                 
         }
@@ -75,12 +76,26 @@ namespace BanHangSieuThi.GUI
 
         private void btnSuanhanvien_Click(object sender, EventArgs e)
         {
-
+            unLockALL();
+            btnNhanvien.Enabled = false; 
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
 
+            int check = insert();
+            if (check == 1)
+            {
+                MessageBox.Show("Thành công!");
+                connection.Open();
+                LoadData();
+                connection.Close();
+            }
+            else
+            {
+
+            }
+            LockALL();
         }
 
         public int insert()
@@ -135,12 +150,63 @@ namespace BanHangSieuThi.GUI
                 return 0;
             }
         }
+        public int Update()
+        {
+
+            string name = gunaTxtTen.Text;
+            string sdt = gunaTxtSdt.Text;
+
+            string Diachi = gunaTxtDiachi.Text;
+            string gioitinh;
+            if (gunaCheckBoxNam.Checked == true)
+            {
+                gioitinh = "Nam";
+            }
+            else
+            {
+                gioitinh = "Nu";
+            }
+            string tendangnhap = gunaTxtTdn.Text;
+            if (name == "" || tendangnhap == "")
+            {
+                MessageBox.Show("vui lòng điền đầy đủ thông tin");
+                return 0;
+            }
+            string query = "UPDATE dbo.tblNhanvien SET TenNV=@name,GT=@gt,DiaChi=@dc,SDT=@sdt where TenDn = @tendn";
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(fromdangnhap.checkConnectionString);
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(con))
+                {
+                    connection.Open();
+
+                    SqlCommand cmd = connection.CreateCommand();
+                    cmd.CommandText = query;
+                    // insert value of Song in database
+                    cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = name;
+                    cmd.Parameters.Add("@sdt", SqlDbType.NVarChar).Value = sdt;
+                    cmd.Parameters.Add("@gt", SqlDbType.NVarChar).Value = gioitinh;
+                    cmd.Parameters.Add("@diachi", SqlDbType.NVarChar).Value = Diachi;
+                    cmd.Parameters.Add("@tendn", SqlDbType.NVarChar).Value = tendangnhap;
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                    return 1;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại!");
+                return 0;
+            }
+        }
         private void gunabtnSave_Click(object sender, EventArgs e)
         {
-            int check = insert();
+            int check = Update();
             if (check == 1)
             {
-                MessageBox.Show("Thêm thành công!");
+                MessageBox.Show("Thành công!");
                 connection.Open();
                 LoadData();
                 connection.Close();
@@ -149,12 +215,71 @@ namespace BanHangSieuThi.GUI
             {
 
             }
-
+            LockALL();
         }
 
         private void gunaButton4_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            LockALL();
+            btnNhanvien.Enabled = true;
+        }
+
+        private DataTable connectionTable(string ma)
+        {
+            DataTable data = new DataTable();
+            // create datatable connect database Users
+            string query = "SELECT * FROM dbo.tblNhanvien WHERE TenDN='" + ma + "'";
+            ConnectString cnn = new ConnectString();
+
+            using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
+            {
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                adapter.Fill(data);                
+                connection.Close();
+            }
+
+            return data;
+        }
+        public void showTxt()
+        {
+            
+
+                DataTable data = connectionTable(formnhanvien.tdn);
+                gunaTxtTdn.Text = data.Rows[0]["TenDn"].ToString();
+                gunaTxtTen.Text = data.Rows[0]["TenNV"].ToString();
+                gunaTxtSdt.Text = data.Rows[0]["Sdt"].ToString();
+                gunaTxtDiachi.Text = data.Rows[0]["Diachi"].ToString();
+               
+                string gioitinh = data.Rows[0]["GT"].ToString().TrimEnd();
+                if (gioitinh == "Nam")
+                {
+                    gunaCheckBoxNam.Checked = true;
+                    gunaCheckBoxNu.Checked = false;
+                }
+                else
+                {
+                    gunaCheckBoxNam.Checked = false;
+                    gunaCheckBoxNu.Checked = true;
+                }
+
+        }
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int posClicked;
+            posClicked = showData.SelectedRows[0].Index;
+            DataGridViewRow temp = this.showData.Rows[posClicked];
+            string Ma = temp.Cells[1].Value.ToString();
+            formnhanvien.tdn = Ma;
+            string ten = temp.Cells[1].Value.ToString();
+            //FormBanDoc.Tenbandoc = ten;
+            showTxt();
+        }
+
     }
 }
