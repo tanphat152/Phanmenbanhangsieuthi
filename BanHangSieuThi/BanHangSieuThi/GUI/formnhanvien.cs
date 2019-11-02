@@ -27,10 +27,15 @@ namespace BanHangSieuThi.GUI
             gunaTxtDiachi.Enabled = false;
             gunaTxtSdt.Enabled = false;
             gunaTxtTdn.Enabled = false;
-            gunabtnSave.Enabled = false; 
+            gunabtnSave.Enabled = false;
+            gunaTxtTen.Text = "";
+            gunaTxtDiachi.Text = "";
+            gunaTxtSdt.Text = "";
+            gunaTxtTdn.Text = "";
         }
         public void unLockALL()
         {
+           
             gunaTxtTen.Enabled = true;
             gunaTxtDiachi.Enabled = true;
             gunaTxtSdt.Enabled = true;
