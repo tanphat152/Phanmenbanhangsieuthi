@@ -47,7 +47,7 @@ namespace BanHangSieuThi.GUI
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.btnLuudl = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
+            this.btnXoa = new Guna.UI.WinForms.GunaButton();
             this.btnSuanhanvien = new Guna.UI.WinForms.GunaButton();
             this.btnNhanvien = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
@@ -191,7 +191,7 @@ namespace BanHangSieuThi.GUI
             this.btnNhaphang.Controls.Add(this.gunaButton3);
             this.btnNhaphang.Controls.Add(this.gunaButton2);
             this.btnNhaphang.Controls.Add(this.btnLuudl);
-            this.btnNhaphang.Controls.Add(this.gunaButton4);
+            this.btnNhaphang.Controls.Add(this.btnXoa);
             this.btnNhaphang.Controls.Add(this.btnSuanhanvien);
             this.btnNhaphang.Controls.Add(this.btnNhanvien);
             this.btnNhaphang.Location = new System.Drawing.Point(26, 173);
@@ -275,30 +275,30 @@ namespace BanHangSieuThi.GUI
             this.btnLuudl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnLuudl.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
-            // gunaButton4
+            // btnXoa
             // 
-            this.gunaButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton4.ForeColor = System.Drawing.Color.White;
-            this.gunaButton4.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton4.Image")));
-            this.gunaButton4.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton4.Location = new System.Drawing.Point(2, 65);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Size = new System.Drawing.Size(165, 45);
-            this.gunaButton4.TabIndex = 3;
-            this.gunaButton4.Text = "Xóa Nhân viên";
-            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnXoa.AnimationHoverSpeed = 0.07F;
+            this.btnXoa.AnimationSpeed = 0.03F;
+            this.btnXoa.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnXoa.BorderColor = System.Drawing.Color.Black;
+            this.btnXoa.FocusedColor = System.Drawing.Color.Empty;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
+            this.btnXoa.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnXoa.Location = new System.Drawing.Point(2, 65);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnXoa.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnXoa.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnXoa.OnHoverImage = null;
+            this.btnXoa.OnPressedColor = System.Drawing.Color.Black;
+            this.btnXoa.Size = new System.Drawing.Size(165, 45);
+            this.btnXoa.TabIndex = 3;
+            this.btnXoa.Text = "Xóa Nhân viên";
+            this.btnXoa.Click += new System.EventHandler(this.gunaButton4_Click);
             // 
             // btnSuanhanvien
             // 
@@ -588,7 +588,7 @@ namespace BanHangSieuThi.GUI
 
         #endregion
 
-        private Guna.UI.WinForms.GunaButton gunaButton4;
+        private Guna.UI.WinForms.GunaButton btnXoa;
         private Guna.UI.WinForms.GunaButton btnNhanvien;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;

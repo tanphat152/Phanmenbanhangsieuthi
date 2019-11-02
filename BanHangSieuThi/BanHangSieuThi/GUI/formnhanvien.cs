@@ -232,7 +232,40 @@ namespace BanHangSieuThi.GUI
 
         private void gunaButton4_Click(object sender, EventArgs e)
         {
+            try
+            {
+               
+                delete(formnhanvien.tdn);
+                MessageBox.Show("Xóa thành công");
+                using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
+                {
+                    connection.Open();
+                    LoadData();
+                    connection.Close();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Xóa không thành công"); 
+            }
+        }
 
+        public void delete(string key)
+        {
+            string query1 = "DELETE	FROM dbo.tblNhanvien WHERE Tendn=  @tendn";
+            ConnectString b = new ConnectString();
+            string con = b.getConnectionString(fromdangnhap.checkConnectionString);
+            using (SqlConnection connection = new SqlConnection(con))
+            {
+                connection.Open();
+
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandText = query1;
+                cmd.Parameters.Add("@tendn", SqlDbType.NVarChar).Value = key;
+                cmd.ExecuteNonQuery();
+                connection.Close();
+
+            }
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
