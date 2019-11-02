@@ -77,7 +77,8 @@ namespace BanHangSieuThi.GUI
         private void btnSuanhanvien_Click(object sender, EventArgs e)
         {
             unLockALL();
-            btnNhanvien.Enabled = false; 
+            btnNhanvien.Enabled = false;
+            btnLuudl.Enabled = false; 
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -87,9 +88,12 @@ namespace BanHangSieuThi.GUI
             if (check == 1)
             {
                 MessageBox.Show("Thành công!");
-                connection.Open();
-                LoadData();
-                connection.Close();
+                using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
+                {
+                    connection.Open();
+                    LoadData();
+                    connection.Close();
+                }
             }
             else
             {
@@ -172,7 +176,7 @@ namespace BanHangSieuThi.GUI
                 MessageBox.Show("vui lòng điền đầy đủ thông tin");
                 return 0;
             }
-            string query = "UPDATE dbo.tblNhanvien SET TenNV=@name,GT=@gt,DiaChi=@dc,SDT=@sdt where TenDn = @tendn";
+            string query = "UPDATE dbo.tblNhanvien SET TenNV=@name,GT=@gt,DiaChi=@diachi,SDT=@sdt where TenDn = @tendn";
             ConnectString cnn = new ConnectString();
             string con = cnn.getConnectionString(fromdangnhap.checkConnectionString);
             try
@@ -207,9 +211,12 @@ namespace BanHangSieuThi.GUI
             if (check == 1)
             {
                 MessageBox.Show("Thành công!");
-                connection.Open();
-                LoadData();
-                connection.Close();
+                using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
+                {
+                    connection.Open();
+                    LoadData();
+                    connection.Close();
+                }
             }
             else
             {
@@ -227,6 +234,7 @@ namespace BanHangSieuThi.GUI
         {
             LockALL();
             btnNhanvien.Enabled = true;
+            btnLuudl.Enabled = true;
         }
 
         private DataTable connectionTable(string ma)

@@ -46,7 +46,7 @@ namespace BanHangSieuThi.GUI
             this.btnNhaphang = new Guna.UI.WinForms.GunaPanel();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.btnLuudl = new Guna.UI.WinForms.GunaButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.btnSuanhanvien = new Guna.UI.WinForms.GunaButton();
             this.btnNhanvien = new Guna.UI.WinForms.GunaButton();
@@ -190,7 +190,7 @@ namespace BanHangSieuThi.GUI
             // 
             this.btnNhaphang.Controls.Add(this.gunaButton3);
             this.btnNhaphang.Controls.Add(this.gunaButton2);
-            this.btnNhaphang.Controls.Add(this.gunaButton1);
+            this.btnNhaphang.Controls.Add(this.btnLuudl);
             this.btnNhaphang.Controls.Add(this.gunaButton4);
             this.btnNhaphang.Controls.Add(this.btnSuanhanvien);
             this.btnNhaphang.Controls.Add(this.btnNhanvien);
@@ -249,31 +249,31 @@ namespace BanHangSieuThi.GUI
             this.gunaButton2.Text = "Hủy bỏ thao tác";
             this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
             // 
-            // gunaButton1
+            // btnLuudl
             // 
-            this.gunaButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
-            this.gunaButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaButton1.Location = new System.Drawing.Point(2, 166);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(165, 45);
-            this.gunaButton1.TabIndex = 7;
-            this.gunaButton1.Text = "Lưu dữ liệu";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
+            this.btnLuudl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLuudl.AnimationHoverSpeed = 0.07F;
+            this.btnLuudl.AnimationSpeed = 0.03F;
+            this.btnLuudl.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnLuudl.BorderColor = System.Drawing.Color.Black;
+            this.btnLuudl.FocusedColor = System.Drawing.Color.Empty;
+            this.btnLuudl.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLuudl.ForeColor = System.Drawing.Color.White;
+            this.btnLuudl.Image = ((System.Drawing.Image)(resources.GetObject("btnLuudl.Image")));
+            this.btnLuudl.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnLuudl.Location = new System.Drawing.Point(2, 166);
+            this.btnLuudl.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLuudl.Name = "btnLuudl";
+            this.btnLuudl.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnLuudl.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnLuudl.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnLuudl.OnHoverImage = null;
+            this.btnLuudl.OnPressedColor = System.Drawing.Color.Black;
+            this.btnLuudl.Size = new System.Drawing.Size(165, 45);
+            this.btnLuudl.TabIndex = 7;
+            this.btnLuudl.Text = "Lưu dữ liệu";
+            this.btnLuudl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnLuudl.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gunaButton4
             // 
@@ -600,7 +600,7 @@ namespace BanHangSieuThi.GUI
         private Guna.UI.WinForms.GunaTextBox gunaTxtDiachi;
         private Guna.UI.WinForms.GunaButton gunaButton3;
         private Guna.UI.WinForms.GunaButton gunaButton2;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton btnLuudl;
         private Guna.UI.WinForms.GunaButton gunaBtnSearch;
         private Guna.UI.WinForms.GunaTextBox gunaTxtTen;
         private Guna.UI.WinForms.GunaPanel btnNhaphang;
