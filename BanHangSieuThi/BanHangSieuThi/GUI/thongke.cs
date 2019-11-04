@@ -29,10 +29,15 @@ namespace BanHangSieuThi.GUI
             txt_SP.Text = dtgv_thongke.Rows[0].Cells["Tên sản phẩm"].Value.ToString();
             txt_SoLuong.Text = dtgv_thongke.Rows[0].Cells["Số lượng"].Value.ToString();
             txt_NSX.Text = dtgv_thongke.Rows[0].Cells["NSX"].Value.ToString();
+            
 
         }
         private void thongke_Load(object sender, EventArgs e)
         {
+            txt_MaSP.Enabled = false;
+            txt_SP.Enabled = false;
+            txt_SoLuong.Enabled = false;
+            txt_NSX.Enabled = false;
             using (conn = new SqlConnection(cnn.getConnectionString(1)))
             {
                 try 
