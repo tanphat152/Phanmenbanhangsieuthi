@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BanHangSieuThi.GUI
-{  
+{
     public partial class formnhanvien : Form
     {
         public formnhanvien()
@@ -19,47 +19,59 @@ namespace BanHangSieuThi.GUI
             InitializeComponent();
         }
 
-        private void btnaddNhanvien_Click(object sender, EventArgs e)
+        private void btnNhanvien_Click(object sender, EventArgs e)
         {
-            gunaTxtTen.Enabled = true;
-            gunaTxtTdn.Enabled = true;
-            gunaTxtDiachi.Enabled = true;
-            gunaTxtSdt.Enabled = true;
-            gunaCheckBoxNam.Enabled = true;
-            gunaCheckBoxNu.Enabled = true;
-            gunaTxtMatkhau.Enabled = true;
             string hoten = gunaTxtTen.Text;
             string tendn = gunaTxtDiachi.Text;
             string diachi = gunaTxtDiachi.Text;
-            string gioitinh;
-            if(gunaCheckBoxNam.Checked == true)
+            string gt;
+            if (gunaCheckBoxNam.Checked == true)
             {
-                gioitinh = "Nam";
+                gt = "Nam";
             }
             else
             {
-                gioitinh = "Nữ";
+                gt = "Nữ";
             }
             string sdt = gunaTxtSdt.Text;
-            if(hoten =="" || tendn =="")
+            string matkhau = gunaTxtMatkhau.Text;
+            if (hoten == "" || tendn == "")
             {
                 MessageBox.Show("vui lòng điền đầy đủ thông tin");
                 return;
             }
             else
             {
-
+                int check = insert_data(hoten, tendn, diachi, gt, sdt, matkhau);
+                if (check == 1)
+                {
+                    DialogResult res = MessageBox.Show("Thêm thành công, bạn có muốn tiếp tục?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    if (res == DialogResult.Yes)
+                    {
+                        gunaTxtTdn.Text = "";
+                        gunaTxtTen.Text = "";
+                        gunaTxtDiachi.Text = "";
+                        gunaTxtMatkhau.Text = "";
+                    }
+                    if (res == DialogResult.No)
+                    {
+                        this.Close();
+                    }
+                }
             }
+
         }
         SqlConnection connection;
         SqlCommand cmd;
         ConnectString connectStr = new ConnectString();
         SqlDataAdapter adap = new SqlDataAdapter();
         DataTable table = new DataTable();
+
+
         public void LoadData()
         {
-            cmd= connection.CreateCommand();
-            cmd.CommandText = "SELECT TenNV as Hoten,TenDn as TenDangNhap ,DiaChi as Diachi,GT as GT,SDT as SDT FROM dbo.tblNhanVien";
+            cmd = connection.CreateCommand();
+            cmd.CommandText = "SELECT TenNV as Hoten,TenDn as TenDangNhap ,DiaChi as Diachi,GT as GT,SDT as SDT, MATKHAU as MatKhau FROM dbo.tblNhanVien";
             adap.SelectCommand = cmd;
             table.Clear();
             adap.Fill(table);
@@ -68,14 +80,7 @@ namespace BanHangSieuThi.GUI
 
         private void formnhanvien_Load(object sender, EventArgs e)
         {
-            gunaTxtTen.Enabled = false;
-            gunaTxtTdn.Enabled = false;
-            gunaTxtDiachi.Enabled = false;
-            gunaTxtSdt.Enabled = false;
-            gunaCheckBoxNam.Enabled = false;
-            gunaCheckBoxNu.Enabled = false;
-            gunaTxtMatkhau.Enabled = false;
-            using (connection = new SqlConnection(connectStr.getConnectionString(0)))
+            using (connection = new SqlConnection(connectStr.getConnectionString(fromdangnhap.checkConnectionString)))
             {
                 connection.Open();
                 LoadData();
@@ -87,27 +92,42 @@ namespace BanHangSieuThi.GUI
         {
 
         }
-
-        private void gunaLabel7_Click(object sender, EventArgs e)
+        public int insert_data(string hoten, string tendn, string diachi, string gt, string sdt, string matkhau)
         {
+            string query = "INSERT INTO dbo.tblNhanVien (TenDn, MatKhau, TenNV, GT, DiaChi, SDT) VALUES (@tendn, @matkhau, @hoten, @gt , @diachi, @sdt)";
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(0);
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(con))
+                {
+                    connection.Open();
+                    SqlCommand cmd = connection.CreateCommand();
+                    cmd.Parameters.Add("@TenDn", SqlDbType.NVarChar).Value = tendn;
+                    cmd.Parameters.Add("@MatKhau", SqlDbType.VarChar).Value = matkhau;
+                    cmd.Parameters.Add("@TenNV", SqlDbType.NVarChar).Value = hoten;
+                    cmd.Parameters.Add("@DiaChi", SqlDbType.NVarChar).Value = diachi;
+                    cmd.Parameters.Add("@GT", SqlDbType.VarChar).Value = gt;
+                    cmd.Parameters.Add("@sdt", SqlDbType.NVarChar).Value = sdt;
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                    return 1;
 
+                }
+            }
+            catch (Exception e)
+            {
+
+                MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại!");
+                return 0;
+
+            }
         }
 
-        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            int i;
-            i = gunaDataGridView1.CurrentRow.Index;
-            gunaTxtTen.Text = gunaDataGridView1.Rows[i].Cells[0].Value.ToString();
-            gunaTxtTdn.Text = gunaDataGridView1.Rows[i].Cells[1].Value.ToString();
-            gunaTxtDiachi.Text = gunaDataGridView1.Rows[i].Cells[2].Value.ToString();
-            if (gunaDataGridView1.Rows[i].Cells[3].Value.ToString() == "Nam")
-            {
-                gunaCheckBoxNam.Checked = true;
-            }
-            else gunaCheckBoxNu.Checked = false;
-            gunaTxtSdt.Text = gunaDataGridView1.Rows[i].Cells[4].Value.ToString();
-            gunaTxtMatkhau.Text = gunaDataGridView1.Rows[i].Cells[5].Value.ToString();
 
         }
     }
 }
+

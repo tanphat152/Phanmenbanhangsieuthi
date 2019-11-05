@@ -353,7 +353,7 @@ namespace BanHangSieuThi.GUI
             this.btnaddNhanvien.Size = new System.Drawing.Size(165, 48);
             this.btnaddNhanvien.TabIndex = 1;
             this.btnaddNhanvien.Text = "Thêm Nhân viên";
-            this.btnaddNhanvien.Click += new System.EventHandler(this.btnaddNhanvien_Click);
+           // this.btnaddNhanvien.Click += new System.EventHandler(this.btnaddNhanvien_Click);
             // 
             // gunaPanel2
             // 
@@ -429,7 +429,7 @@ namespace BanHangSieuThi.GUI
             this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
+           // this.gunaDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gunaDataGridView1_CellContentClick);
             // 
             // TenNV
             // 
@@ -526,7 +526,7 @@ namespace BanHangSieuThi.GUI
             this.gunaLabel7.Size = new System.Drawing.Size(57, 15);
             this.gunaLabel7.TabIndex = 14;
             this.gunaLabel7.Text = "Mật khẩu";
-            this.gunaLabel7.Click += new System.EventHandler(this.gunaLabel7_Click);
+          //  this.gunaLabel7.Click += new System.EventHandler(this.gunaLabel7_Click);
             // 
             // gunaTxtMatkhau
             // 
