@@ -75,5 +75,11 @@ namespace BanHangSieuThi.GUI
 
             }
         }
+
+        private void gunaButton5_Click(object sender, EventArgs e)
+        {
+            huongdan fr = new huongdan();
+            fr.Show();
+        }
     }
 }
