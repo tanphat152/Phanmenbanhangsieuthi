@@ -36,10 +36,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 89);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 364);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 349);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -48,7 +48,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(208, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(351, 45);
+            this.label1.Size = new System.Drawing.Size(342, 44);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thống kê kho hàng";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
