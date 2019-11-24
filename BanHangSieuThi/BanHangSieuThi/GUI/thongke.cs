@@ -23,12 +23,19 @@ namespace BanHangSieuThi.GUI
         {
             InitializeComponent();
         }
+        void load()
+        {
+            txt_MaSP.Text = dtgv_thongke.Rows[0].Cells["Mã sản phẩm"].Value.ToString();
+            txt_SP.Text = dtgv_thongke.Rows[0].Cells["Tên sản phẩm"].Value.ToString();
+            txt_SoLuong.Text = dtgv_thongke.Rows[0].Cells["Số lượng"].Value.ToString();
+            txt_NSX.Text = dtgv_thongke.Rows[0].Cells["NSX"].Value.ToString();
 
+        }
         private void thongke_Load(object sender, EventArgs e)
         {
             using (conn = new SqlConnection(cnn.getConnectionString(1)))
             {
-                try
+                try 
                 {
                     query = "ThongKe_SP";
                     cmd = new SqlCommand(query, conn);
@@ -40,6 +47,17 @@ namespace BanHangSieuThi.GUI
                 catch
                     { }
             }
+
+        }
+
+        private void dtgv_thongke_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index;
+            index = dtgv_thongke.CurrentRow.Index;
+            txt_MaSP.Text = dtgv_thongke.Rows[index].Cells["Mã sản phẩm"].Value.ToString();
+            txt_SP.Text= dtgv_thongke.Rows[index].Cells["Tên sản phẩm"].Value.ToString();
+            txt_SoLuong.Text = dtgv_thongke.Rows[index].Cells["Số lượng"].Value.ToString();
+            txt_NSX.Text = dtgv_thongke.Rows[index].Cells["NSX"].Value.ToString();
 
         }
     }
