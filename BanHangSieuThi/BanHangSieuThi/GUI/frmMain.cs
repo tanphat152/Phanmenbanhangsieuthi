@@ -60,5 +60,20 @@ namespace BanHangSieuThi.GUI
             thongke fr = new thongke();
             fr.Show();
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Quay lại trang đăng nhâp ?" , "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if(res==DialogResult.Yes)
+            {
+                fromdangnhap a = new fromdangnhap();
+                this.Hide();
+                a.ShowDialog();
+            }
+            else
+            {
+
+            }
+        }
     }
 }
