@@ -358,5 +358,10 @@ namespace BanHangSieuThi.GUI
                 conn.Close();
             }
         }
+
+        private void showSp_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
