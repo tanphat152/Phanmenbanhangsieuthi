@@ -38,7 +38,7 @@ namespace BanHangSieuThi.GUI
             txt_SP.Enabled = false;
             txt_SoLuong.Enabled = false;
             txt_NSX.Enabled = false;
-            using (conn = new SqlConnection(cnn.getConnectionString(1)))
+            using (conn = new SqlConnection(cnn.getConnectionString(0)))
             {
                 try 
                 {
@@ -78,7 +78,7 @@ namespace BanHangSieuThi.GUI
         {
             query = "select MaSP as'Mã sản phẩm', TenSP as 'Tên sản phẩm',SoLuong as'Số lượng', GiaBan as'Giá bán',NSX from tblSanPham " +
             "where MaSP like N'%" + txt_search.Text + "%' or TenSP like N'%" + txt_search.Text + "%' or NSX like N'%" + txt_search.Text + "%'";
-            using (conn = new SqlConnection(cnn.getConnectionString(1)))
+            using (conn = new SqlConnection(cnn.getConnectionString(0)))
             {
                 dt.Clear();
                 adap = new SqlDataAdapter(query, conn);

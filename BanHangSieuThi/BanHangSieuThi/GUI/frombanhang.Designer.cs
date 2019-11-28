@@ -69,7 +69,6 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox5 = new Guna.UI.WinForms.GunaGroupBox();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_BackChooseItem = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -94,6 +93,7 @@
             this.gunaTextBox8 = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel11 = new Guna.UI.WinForms.GunaLabel();
             this.HoanThanh = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
             this.QuyTrinhBanHang.SuspendLayout();
             this.tab1.SuspendLayout();
             this.gunaGroupBox3.SuspendLayout();
@@ -120,10 +120,10 @@
             this.QuyTrinhBanHang.Controls.Add(this.tab3);
             this.QuyTrinhBanHang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.QuyTrinhBanHang.Location = new System.Drawing.Point(0, 0);
-            this.QuyTrinhBanHang.Margin = new System.Windows.Forms.Padding(2);
+            this.QuyTrinhBanHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.QuyTrinhBanHang.Name = "QuyTrinhBanHang";
             this.QuyTrinhBanHang.SelectedIndex = 0;
-            this.QuyTrinhBanHang.Size = new System.Drawing.Size(995, 603);
+            this.QuyTrinhBanHang.Size = new System.Drawing.Size(1327, 742);
             this.QuyTrinhBanHang.TabIndex = 0;
             // 
             // tab1
@@ -136,11 +136,11 @@
             this.tab1.Controls.Add(this.gunaGroupBox1);
             this.tab1.Controls.Add(this.gunaGroupBox2);
             this.tab1.Controls.Add(this.btn_nextNTT);
-            this.tab1.Location = new System.Drawing.Point(4, 22);
-            this.tab1.Margin = new System.Windows.Forms.Padding(2);
+            this.tab1.Location = new System.Drawing.Point(4, 25);
+            this.tab1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tab1.Name = "tab1";
-            this.tab1.Padding = new System.Windows.Forms.Padding(2);
-            this.tab1.Size = new System.Drawing.Size(987, 577);
+            this.tab1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab1.Size = new System.Drawing.Size(1319, 713);
             this.tab1.TabIndex = 0;
             this.tab1.Text = "ChonMua";
             // 
@@ -162,8 +162,8 @@
             this.btn_removeCart.Image = null;
             this.btn_removeCart.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_removeCart.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_removeCart.Location = new System.Drawing.Point(435, 534);
-            this.btn_removeCart.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_removeCart.Location = new System.Drawing.Point(580, 657);
+            this.btn_removeCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_removeCart.Name = "btn_removeCart";
             this.btn_removeCart.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_removeCart.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -171,7 +171,7 @@
             this.btn_removeCart.OnHoverImage = null;
             this.btn_removeCart.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_removeCart.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_removeCart.Size = new System.Drawing.Size(135, 34);
+            this.btn_removeCart.Size = new System.Drawing.Size(180, 42);
             this.btn_removeCart.TabIndex = 39;
             this.btn_removeCart.Text = "Hủy giỏ hàng";
             this.btn_removeCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -195,8 +195,8 @@
             this.btn_removeItem.Image = null;
             this.btn_removeItem.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_removeItem.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_removeItem.Location = new System.Drawing.Point(278, 534);
-            this.btn_removeItem.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_removeItem.Location = new System.Drawing.Point(371, 657);
+            this.btn_removeItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_removeItem.Name = "btn_removeItem";
             this.btn_removeItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_removeItem.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -204,7 +204,7 @@
             this.btn_removeItem.OnHoverImage = null;
             this.btn_removeItem.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_removeItem.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_removeItem.Size = new System.Drawing.Size(135, 34);
+            this.btn_removeItem.Size = new System.Drawing.Size(180, 42);
             this.btn_removeItem.TabIndex = 38;
             this.btn_removeItem.Text = "Hủy mặt hàng";
             this.btn_removeItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -227,8 +227,8 @@
             this.btn_addToCart.Image = null;
             this.btn_addToCart.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_addToCart.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_addToCart.Location = new System.Drawing.Point(278, 478);
-            this.btn_addToCart.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_addToCart.Location = new System.Drawing.Point(371, 588);
+            this.btn_addToCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addToCart.Name = "btn_addToCart";
             this.btn_addToCart.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_addToCart.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -236,7 +236,7 @@
             this.btn_addToCart.OnHoverImage = null;
             this.btn_addToCart.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_addToCart.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_addToCart.Size = new System.Drawing.Size(135, 34);
+            this.btn_addToCart.Size = new System.Drawing.Size(180, 42);
             this.btn_addToCart.TabIndex = 37;
             this.btn_addToCart.Text = "Thêm vào giỏ hàng";
             this.btn_addToCart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -254,9 +254,10 @@
             this.gunaGroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox3.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.gunaGroupBox3.Location = new System.Drawing.Point(3, 314);
+            this.gunaGroupBox3.Location = new System.Drawing.Point(4, 386);
+            this.gunaGroupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox3.Name = "gunaGroupBox3";
-            this.gunaGroupBox3.Size = new System.Drawing.Size(266, 258);
+            this.gunaGroupBox3.Size = new System.Drawing.Size(355, 318);
             this.gunaGroupBox3.TabIndex = 36;
             this.gunaGroupBox3.Text = "Giỏ hàng";
             this.gunaGroupBox3.TextLocation = new System.Drawing.Point(10, 5);
@@ -295,15 +296,15 @@
             this.showCart.DefaultCellStyle = dataGridViewCellStyle3;
             this.showCart.EnableHeadersVisualStyles = false;
             this.showCart.GridColor = System.Drawing.Color.White;
-            this.showCart.Location = new System.Drawing.Point(5, 24);
-            this.showCart.Margin = new System.Windows.Forms.Padding(4);
+            this.showCart.Location = new System.Drawing.Point(7, 30);
+            this.showCart.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.showCart.Name = "showCart";
             this.showCart.ReadOnly = true;
             this.showCart.RowHeadersVisible = false;
             this.showCart.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showCart.RowTemplate.Height = 24;
             this.showCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showCart.Size = new System.Drawing.Size(255, 229);
+            this.showCart.Size = new System.Drawing.Size(340, 282);
             this.showCart.TabIndex = 33;
             this.showCart.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showCart.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -341,9 +342,10 @@
             this.gunaGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox1.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.gunaGroupBox1.Location = new System.Drawing.Point(274, 6);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(365, 7);
+            this.gunaGroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(710, 456);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(947, 561);
             this.gunaGroupBox1.TabIndex = 35;
             this.gunaGroupBox1.Text = "Sản phẩm";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 5);
@@ -382,15 +384,15 @@
             this.showSp.DefaultCellStyle = dataGridViewCellStyle6;
             this.showSp.EnableHeadersVisualStyles = false;
             this.showSp.GridColor = System.Drawing.Color.White;
-            this.showSp.Location = new System.Drawing.Point(4, 28);
-            this.showSp.Margin = new System.Windows.Forms.Padding(4);
+            this.showSp.Location = new System.Drawing.Point(5, 34);
+            this.showSp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.showSp.Name = "showSp";
             this.showSp.ReadOnly = true;
             this.showSp.RowHeadersVisible = false;
             this.showSp.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showSp.RowTemplate.Height = 24;
             this.showSp.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showSp.Size = new System.Drawing.Size(703, 424);
+            this.showSp.Size = new System.Drawing.Size(937, 522);
             this.showSp.TabIndex = 32;
             this.showSp.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showSp.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -429,9 +431,10 @@
             this.gunaGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox2.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.gunaGroupBox2.Location = new System.Drawing.Point(3, 6);
+            this.gunaGroupBox2.Location = new System.Drawing.Point(4, 7);
+            this.gunaGroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox2.Name = "gunaGroupBox2";
-            this.gunaGroupBox2.Size = new System.Drawing.Size(266, 301);
+            this.gunaGroupBox2.Size = new System.Drawing.Size(355, 370);
             this.gunaGroupBox2.TabIndex = 34;
             this.gunaGroupBox2.Text = "Tùy chọn theo";
             this.gunaGroupBox2.TextLocation = new System.Drawing.Point(10, 5);
@@ -441,10 +444,9 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel2.ForeColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Location = new System.Drawing.Point(3, 166);
-            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel2.Location = new System.Drawing.Point(4, 204);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(81, 15);
+            this.gunaLabel2.Size = new System.Drawing.Size(100, 20);
             this.gunaLabel2.TabIndex = 35;
             this.gunaLabel2.Text = "Nhà cung cấp";
             // 
@@ -453,10 +455,9 @@
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Location = new System.Drawing.Point(3, 30);
-            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel1.Location = new System.Drawing.Point(4, 37);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(85, 15);
+            this.gunaLabel1.Size = new System.Drawing.Size(106, 20);
             this.gunaLabel1.TabIndex = 33;
             this.gunaLabel1.Text = "Loại Sản Phẩm";
             // 
@@ -493,15 +494,15 @@
             this.showNCC.DefaultCellStyle = dataGridViewCellStyle9;
             this.showNCC.EnableHeadersVisualStyles = false;
             this.showNCC.GridColor = System.Drawing.Color.White;
-            this.showNCC.Location = new System.Drawing.Point(5, 191);
-            this.showNCC.Margin = new System.Windows.Forms.Padding(4);
+            this.showNCC.Location = new System.Drawing.Point(7, 235);
+            this.showNCC.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.showNCC.Name = "showNCC";
             this.showNCC.ReadOnly = true;
             this.showNCC.RowHeadersVisible = false;
             this.showNCC.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showNCC.RowTemplate.Height = 24;
             this.showNCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showNCC.Size = new System.Drawing.Size(255, 106);
+            this.showNCC.Size = new System.Drawing.Size(340, 130);
             this.showNCC.TabIndex = 34;
             this.showNCC.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showNCC.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -559,15 +560,15 @@
             this.showType.DefaultCellStyle = dataGridViewCellStyle12;
             this.showType.EnableHeadersVisualStyles = false;
             this.showType.GridColor = System.Drawing.Color.White;
-            this.showType.Location = new System.Drawing.Point(5, 55);
-            this.showType.Margin = new System.Windows.Forms.Padding(4);
+            this.showType.Location = new System.Drawing.Point(7, 68);
+            this.showType.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.showType.Name = "showType";
             this.showType.ReadOnly = true;
             this.showType.RowHeadersVisible = false;
             this.showType.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showType.RowTemplate.Height = 24;
             this.showType.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showType.Size = new System.Drawing.Size(255, 106);
+            this.showType.Size = new System.Drawing.Size(340, 130);
             this.showType.TabIndex = 33;
             this.showType.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showType.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -610,8 +611,8 @@
             this.btn_nextNTT.Image = null;
             this.btn_nextNTT.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_nextNTT.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_nextNTT.Location = new System.Drawing.Point(846, 534);
-            this.btn_nextNTT.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_nextNTT.Location = new System.Drawing.Point(1128, 657);
+            this.btn_nextNTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_nextNTT.Name = "btn_nextNTT";
             this.btn_nextNTT.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_nextNTT.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -619,7 +620,7 @@
             this.btn_nextNTT.OnHoverImage = null;
             this.btn_nextNTT.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_nextNTT.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_nextNTT.Size = new System.Drawing.Size(135, 34);
+            this.btn_nextNTT.Size = new System.Drawing.Size(180, 42);
             this.btn_nextNTT.TabIndex = 0;
             this.btn_nextNTT.Text = "Tiếp tục";
             this.btn_nextNTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -633,11 +634,11 @@
             this.tab2.Controls.Add(this.btn_BackChooseItem);
             this.tab2.Controls.Add(this.gunaGroupBox4);
             this.tab2.Controls.Add(this.btn_NBH);
-            this.tab2.Location = new System.Drawing.Point(4, 22);
-            this.tab2.Margin = new System.Windows.Forms.Padding(2);
+            this.tab2.Location = new System.Drawing.Point(4, 25);
+            this.tab2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tab2.Name = "tab2";
-            this.tab2.Padding = new System.Windows.Forms.Padding(2);
-            this.tab2.Size = new System.Drawing.Size(987, 577);
+            this.tab2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab2.Size = new System.Drawing.Size(1319, 713);
             this.tab2.TabIndex = 1;
             this.tab2.Text = "NhapThongTinKH";
             // 
@@ -658,9 +659,10 @@
             this.gunaGroupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox6.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaGroupBox6.Location = new System.Drawing.Point(332, 41);
+            this.gunaGroupBox6.Location = new System.Drawing.Point(443, 50);
+            this.gunaGroupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox6.Name = "gunaGroupBox6";
-            this.gunaGroupBox6.Size = new System.Drawing.Size(630, 211);
+            this.gunaGroupBox6.Size = new System.Drawing.Size(840, 260);
             this.gunaGroupBox6.TabIndex = 45;
             this.gunaGroupBox6.Text = "Khách hàng";
             this.gunaGroupBox6.TextLocation = new System.Drawing.Point(10, 5);
@@ -677,10 +679,13 @@
             this.gunaTextBox5.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox5.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox5.Location = new System.Drawing.Point(323, 76);
+            this.gunaTextBox5.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox5.Location = new System.Drawing.Point(431, 94);
+            this.gunaTextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaTextBox5.MultiLine = true;
             this.gunaTextBox5.Name = "gunaTextBox5";
             this.gunaTextBox5.PasswordChar = '\0';
-            this.gunaTextBox5.Size = new System.Drawing.Size(248, 89);
+            this.gunaTextBox5.Size = new System.Drawing.Size(331, 110);
             this.gunaTextBox5.TabIndex = 48;
             // 
             // gunaLabel7
@@ -688,9 +693,10 @@
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel7.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel7.Location = new System.Drawing.Point(320, 58);
+            this.gunaLabel7.Location = new System.Drawing.Point(427, 71);
+            this.gunaLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(43, 15);
+            this.gunaLabel7.Size = new System.Drawing.Size(55, 20);
             this.gunaLabel7.TabIndex = 47;
             this.gunaLabel7.Text = "Địa chỉ";
             // 
@@ -703,10 +709,12 @@
             this.gunaTextBox4.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox4.Location = new System.Drawing.Point(32, 135);
+            this.gunaTextBox4.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox4.Location = new System.Drawing.Point(43, 166);
+            this.gunaTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox4.Name = "gunaTextBox4";
             this.gunaTextBox4.PasswordChar = '\0';
-            this.gunaTextBox4.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox4.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox4.TabIndex = 46;
             // 
             // gunaLabel6
@@ -714,9 +722,10 @@
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel6.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel6.Location = new System.Drawing.Point(32, 117);
+            this.gunaLabel6.Location = new System.Drawing.Point(43, 144);
+            this.gunaLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(76, 15);
+            this.gunaLabel6.Size = new System.Drawing.Size(97, 20);
             this.gunaLabel6.TabIndex = 45;
             this.gunaLabel6.Text = "Số điện thoại";
             // 
@@ -729,10 +738,12 @@
             this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox2.Location = new System.Drawing.Point(32, 76);
+            this.gunaTextBox2.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox2.Location = new System.Drawing.Point(43, 94);
+            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox2.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox2.TabIndex = 44;
             // 
             // gunaLabel3
@@ -740,9 +751,10 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel3.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel3.Location = new System.Drawing.Point(32, 58);
+            this.gunaLabel3.Location = new System.Drawing.Point(43, 71);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(90, 15);
+            this.gunaLabel3.Size = new System.Drawing.Size(111, 20);
             this.gunaLabel3.TabIndex = 43;
             this.gunaLabel3.Text = "Tên khách hàng";
             // 
@@ -759,9 +771,10 @@
             this.gunaGroupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox5.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaGroupBox5.Location = new System.Drawing.Point(34, 41);
+            this.gunaGroupBox5.Location = new System.Drawing.Point(45, 50);
+            this.gunaGroupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox5.Name = "gunaGroupBox5";
-            this.gunaGroupBox5.Size = new System.Drawing.Size(292, 211);
+            this.gunaGroupBox5.Size = new System.Drawing.Size(389, 260);
             this.gunaGroupBox5.TabIndex = 44;
             this.gunaGroupBox5.Text = "Nhân viên lập đơn";
             this.gunaGroupBox5.TextLocation = new System.Drawing.Point(10, 5);
@@ -771,35 +784,22 @@
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel5.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel5.Location = new System.Drawing.Point(20, 117);
+            this.gunaLabel5.Location = new System.Drawing.Point(27, 144);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(80, 15);
+            this.gunaLabel5.Size = new System.Drawing.Size(99, 20);
             this.gunaLabel5.TabIndex = 45;
             this.gunaLabel5.Text = "Tên nhân viên";
-            // 
-            // gunaTextBox3
-            // 
-            this.gunaTextBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox3.Location = new System.Drawing.Point(20, 135);
-            this.gunaTextBox3.Name = "gunaTextBox3";
-            this.gunaTextBox3.PasswordChar = '\0';
-            this.gunaTextBox3.Size = new System.Drawing.Size(248, 30);
-            this.gunaTextBox3.TabIndex = 44;
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(20, 58);
+            this.gunaLabel4.Location = new System.Drawing.Point(27, 71);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(79, 15);
+            this.gunaLabel4.Size = new System.Drawing.Size(97, 20);
             this.gunaLabel4.TabIndex = 43;
             this.gunaLabel4.Text = "Mã nhân viên";
             // 
@@ -812,10 +812,12 @@
             this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox1.Location = new System.Drawing.Point(20, 76);
+            this.gunaTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox1.Location = new System.Drawing.Point(27, 94);
+            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
-            this.gunaTextBox1.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox1.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox1.TabIndex = 42;
             // 
             // btn_BackChooseItem
@@ -836,8 +838,8 @@
             this.btn_BackChooseItem.Image = null;
             this.btn_BackChooseItem.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_BackChooseItem.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_BackChooseItem.Location = new System.Drawing.Point(4, 541);
-            this.btn_BackChooseItem.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_BackChooseItem.Location = new System.Drawing.Point(5, 666);
+            this.btn_BackChooseItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_BackChooseItem.Name = "btn_BackChooseItem";
             this.btn_BackChooseItem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_BackChooseItem.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -845,7 +847,7 @@
             this.btn_BackChooseItem.OnHoverImage = null;
             this.btn_BackChooseItem.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_BackChooseItem.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_BackChooseItem.Size = new System.Drawing.Size(135, 34);
+            this.btn_BackChooseItem.Size = new System.Drawing.Size(180, 42);
             this.btn_BackChooseItem.TabIndex = 38;
             this.btn_BackChooseItem.Text = "Quay Lại";
             this.btn_BackChooseItem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -866,9 +868,10 @@
             this.gunaGroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox4.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaGroupBox4.Location = new System.Drawing.Point(29, 258);
+            this.gunaGroupBox4.Location = new System.Drawing.Point(39, 318);
+            this.gunaGroupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox4.Name = "gunaGroupBox4";
-            this.gunaGroupBox4.Size = new System.Drawing.Size(940, 258);
+            this.gunaGroupBox4.Size = new System.Drawing.Size(1253, 318);
             this.gunaGroupBox4.TabIndex = 37;
             this.gunaGroupBox4.Text = "Giỏ hàng";
             this.gunaGroupBox4.TextLocation = new System.Drawing.Point(10, 5);
@@ -879,9 +882,10 @@
             this.txt_priceCart.AutoSize = true;
             this.txt_priceCart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_priceCart.ForeColor = System.Drawing.Color.White;
-            this.txt_priceCart.Location = new System.Drawing.Point(784, 227);
+            this.txt_priceCart.Location = new System.Drawing.Point(1045, 279);
+            this.txt_priceCart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txt_priceCart.Name = "txt_priceCart";
-            this.txt_priceCart.Size = new System.Drawing.Size(33, 15);
+            this.txt_priceCart.Size = new System.Drawing.Size(42, 20);
             this.txt_priceCart.TabIndex = 45;
             this.txt_priceCart.Text = "price";
             // 
@@ -891,9 +895,10 @@
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel8.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel8.Location = new System.Drawing.Point(623, 227);
+            this.gunaLabel8.Location = new System.Drawing.Point(831, 279);
+            this.gunaLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(90, 15);
+            this.gunaLabel8.Size = new System.Drawing.Size(113, 20);
             this.gunaLabel8.TabIndex = 44;
             this.gunaLabel8.Text = "Tổng hóa đơn : ";
             // 
@@ -931,15 +936,15 @@
             this.showCartOIFE.DefaultCellStyle = dataGridViewCellStyle15;
             this.showCartOIFE.EnableHeadersVisualStyles = false;
             this.showCartOIFE.GridColor = System.Drawing.Color.White;
-            this.showCartOIFE.Location = new System.Drawing.Point(0, 29);
-            this.showCartOIFE.Margin = new System.Windows.Forms.Padding(4);
+            this.showCartOIFE.Location = new System.Drawing.Point(0, 36);
+            this.showCartOIFE.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.showCartOIFE.Name = "showCartOIFE";
             this.showCartOIFE.ReadOnly = true;
             this.showCartOIFE.RowHeadersVisible = false;
             this.showCartOIFE.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showCartOIFE.RowTemplate.Height = 24;
             this.showCartOIFE.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showCartOIFE.Size = new System.Drawing.Size(940, 187);
+            this.showCartOIFE.Size = new System.Drawing.Size(1253, 230);
             this.showCartOIFE.TabIndex = 33;
             this.showCartOIFE.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showCartOIFE.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -982,8 +987,8 @@
             this.btn_NBH.Image = null;
             this.btn_NBH.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_NBH.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btn_NBH.Location = new System.Drawing.Point(848, 541);
-            this.btn_NBH.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_NBH.Location = new System.Drawing.Point(1131, 666);
+            this.btn_NBH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_NBH.Name = "btn_NBH";
             this.btn_NBH.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_NBH.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -991,7 +996,7 @@
             this.btn_NBH.OnHoverImage = null;
             this.btn_NBH.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btn_NBH.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_NBH.Size = new System.Drawing.Size(135, 34);
+            this.btn_NBH.Size = new System.Drawing.Size(180, 42);
             this.btn_NBH.TabIndex = 1;
             this.btn_NBH.Text = "Tiếp tục";
             this.btn_NBH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1003,11 +1008,11 @@
             this.tab3.Controls.Add(this.groupBox1);
             this.tab3.Controls.Add(this.gunaGroupBox7);
             this.tab3.Controls.Add(this.HoanThanh);
-            this.tab3.Location = new System.Drawing.Point(4, 22);
-            this.tab3.Margin = new System.Windows.Forms.Padding(2);
+            this.tab3.Location = new System.Drawing.Point(4, 25);
+            this.tab3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tab3.Name = "tab3";
-            this.tab3.Padding = new System.Windows.Forms.Padding(2);
-            this.tab3.Size = new System.Drawing.Size(987, 577);
+            this.tab3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tab3.Size = new System.Drawing.Size(1319, 713);
             this.tab3.TabIndex = 2;
             this.tab3.Text = "NhapBaoHanh";
             // 
@@ -1017,9 +1022,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.checkTrueNBH);
             this.groupBox1.Controls.Add(this.checkFalseNBH);
-            this.groupBox1.Location = new System.Drawing.Point(48, 20);
+            this.groupBox1.Location = new System.Drawing.Point(64, 25);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(886, 75);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1181, 92);
             this.groupBox1.TabIndex = 49;
             this.groupBox1.TabStop = false;
             // 
@@ -1030,9 +1037,10 @@
             this.checkTrueNBH.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.checkTrueNBH.FillColor = System.Drawing.Color.White;
             this.checkTrueNBH.ForeColor = System.Drawing.Color.White;
-            this.checkTrueNBH.Location = new System.Drawing.Point(111, 31);
+            this.checkTrueNBH.Location = new System.Drawing.Point(148, 38);
+            this.checkTrueNBH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkTrueNBH.Name = "checkTrueNBH";
-            this.checkTrueNBH.Size = new System.Drawing.Size(122, 20);
+            this.checkTrueNBH.Size = new System.Drawing.Size(139, 20);
             this.checkTrueNBH.TabIndex = 47;
             this.checkTrueNBH.Text = "Sử dụng bảo hàng";
             this.checkTrueNBH.CheckedChanged += new System.EventHandler(this.checkTrueNBH_CheckedChanged_1);
@@ -1045,9 +1053,10 @@
             this.checkFalseNBH.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.checkFalseNBH.FillColor = System.Drawing.Color.White;
             this.checkFalseNBH.ForeColor = System.Drawing.Color.White;
-            this.checkFalseNBH.Location = new System.Drawing.Point(562, 31);
+            this.checkFalseNBH.Location = new System.Drawing.Point(749, 38);
+            this.checkFalseNBH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkFalseNBH.Name = "checkFalseNBH";
-            this.checkFalseNBH.Size = new System.Drawing.Size(156, 20);
+            this.checkFalseNBH.Size = new System.Drawing.Size(179, 20);
             this.checkFalseNBH.TabIndex = 48;
             this.checkFalseNBH.Text = "Không sử dụng bảo hành";
             this.checkFalseNBH.Click += new System.EventHandler(this.checkFalseNBH_CheckedChanged);
@@ -1074,9 +1083,10 @@
             this.gunaGroupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox7.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaGroupBox7.Location = new System.Drawing.Point(48, 108);
+            this.gunaGroupBox7.Location = new System.Drawing.Point(64, 133);
+            this.gunaGroupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox7.Name = "gunaGroupBox7";
-            this.gunaGroupBox7.Size = new System.Drawing.Size(886, 414);
+            this.gunaGroupBox7.Size = new System.Drawing.Size(1181, 510);
             this.gunaGroupBox7.TabIndex = 46;
             this.gunaGroupBox7.Text = "Phiếu bảo hàng";
             this.gunaGroupBox7.TextLocation = new System.Drawing.Point(10, 5);
@@ -1092,10 +1102,12 @@
             this.gunaTextBox10.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox10.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox10.Location = new System.Drawing.Point(380, 80);
+            this.gunaTextBox10.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox10.Location = new System.Drawing.Point(507, 98);
+            this.gunaTextBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox10.Name = "gunaTextBox10";
             this.gunaTextBox10.PasswordChar = '\0';
-            this.gunaTextBox10.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox10.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox10.TabIndex = 52;
             // 
             // gunaLabel13
@@ -1105,9 +1117,10 @@
             this.gunaLabel13.AutoSize = true;
             this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel13.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel13.Location = new System.Drawing.Point(246, 88);
+            this.gunaLabel13.Location = new System.Drawing.Point(328, 108);
+            this.gunaLabel13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(77, 15);
+            this.gunaLabel13.Size = new System.Drawing.Size(96, 20);
             this.gunaLabel13.TabIndex = 51;
             this.gunaLabel13.Text = "Mã bảo hành";
             // 
@@ -1122,10 +1135,12 @@
             this.gunaTextBox6.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox6.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox6.Location = new System.Drawing.Point(380, 276);
+            this.gunaTextBox6.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox6.Location = new System.Drawing.Point(507, 340);
+            this.gunaTextBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox6.Name = "gunaTextBox6";
             this.gunaTextBox6.PasswordChar = '\0';
-            this.gunaTextBox6.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox6.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox6.TabIndex = 50;
             // 
             // gunaLabel9
@@ -1135,9 +1150,10 @@
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel9.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel9.Location = new System.Drawing.Point(246, 284);
+            this.gunaLabel9.Location = new System.Drawing.Point(328, 350);
+            this.gunaLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(71, 15);
+            this.gunaLabel9.Size = new System.Drawing.Size(89, 20);
             this.gunaLabel9.TabIndex = 49;
             this.gunaLabel9.Text = "Mã hóa đơn";
             // 
@@ -1152,10 +1168,12 @@
             this.gunaTextBox9.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox9.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox9.Location = new System.Drawing.Point(380, 129);
+            this.gunaTextBox9.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox9.Location = new System.Drawing.Point(507, 159);
+            this.gunaTextBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox9.Name = "gunaTextBox9";
             this.gunaTextBox9.PasswordChar = '\0';
-            this.gunaTextBox9.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox9.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox9.TabIndex = 48;
             // 
             // gunaLabel12
@@ -1165,9 +1183,10 @@
             this.gunaLabel12.AutoSize = true;
             this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel12.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel12.Location = new System.Drawing.Point(246, 137);
+            this.gunaLabel12.Location = new System.Drawing.Point(328, 169);
+            this.gunaLabel12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(80, 15);
+            this.gunaLabel12.Size = new System.Drawing.Size(99, 20);
             this.gunaLabel12.TabIndex = 47;
             this.gunaLabel12.Text = "Tên nhân viên";
             // 
@@ -1182,10 +1201,12 @@
             this.gunaTextBox7.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox7.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox7.Location = new System.Drawing.Point(380, 227);
+            this.gunaTextBox7.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox7.Location = new System.Drawing.Point(507, 279);
+            this.gunaTextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox7.Name = "gunaTextBox7";
             this.gunaTextBox7.PasswordChar = '\0';
-            this.gunaTextBox7.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox7.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox7.TabIndex = 46;
             // 
             // gunaLabel10
@@ -1195,9 +1216,10 @@
             this.gunaLabel10.AutoSize = true;
             this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel10.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel10.Location = new System.Drawing.Point(246, 235);
+            this.gunaLabel10.Location = new System.Drawing.Point(328, 289);
+            this.gunaLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(76, 15);
+            this.gunaLabel10.Size = new System.Drawing.Size(97, 20);
             this.gunaLabel10.TabIndex = 45;
             this.gunaLabel10.Text = "Số điện thoại";
             // 
@@ -1212,10 +1234,12 @@
             this.gunaTextBox8.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox8.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox8.Location = new System.Drawing.Point(380, 178);
+            this.gunaTextBox8.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox8.Location = new System.Drawing.Point(507, 219);
+            this.gunaTextBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaTextBox8.Name = "gunaTextBox8";
             this.gunaTextBox8.PasswordChar = '\0';
-            this.gunaTextBox8.Size = new System.Drawing.Size(248, 30);
+            this.gunaTextBox8.Size = new System.Drawing.Size(331, 37);
             this.gunaTextBox8.TabIndex = 44;
             // 
             // gunaLabel11
@@ -1225,9 +1249,10 @@
             this.gunaLabel11.AutoSize = true;
             this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel11.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel11.Location = new System.Drawing.Point(246, 186);
+            this.gunaLabel11.Location = new System.Drawing.Point(328, 229);
+            this.gunaLabel11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(90, 15);
+            this.gunaLabel11.Size = new System.Drawing.Size(111, 20);
             this.gunaLabel11.TabIndex = 43;
             this.gunaLabel11.Text = "Tên khách hàng";
             // 
@@ -1249,8 +1274,8 @@
             this.HoanThanh.Image = null;
             this.HoanThanh.ImageSize = new System.Drawing.Size(20, 20);
             this.HoanThanh.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.HoanThanh.Location = new System.Drawing.Point(848, 539);
-            this.HoanThanh.Margin = new System.Windows.Forms.Padding(2);
+            this.HoanThanh.Location = new System.Drawing.Point(1131, 663);
+            this.HoanThanh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HoanThanh.Name = "HoanThanh";
             this.HoanThanh.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.HoanThanh.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -1258,19 +1283,36 @@
             this.HoanThanh.OnHoverImage = null;
             this.HoanThanh.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.HoanThanh.OnPressedColor = System.Drawing.Color.Black;
-            this.HoanThanh.Size = new System.Drawing.Size(135, 34);
+            this.HoanThanh.Size = new System.Drawing.Size(180, 42);
             this.HoanThanh.TabIndex = 2;
             this.HoanThanh.Text = "Xác nhận";
             this.HoanThanh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.HoanThanh.Click += new System.EventHandler(this.HoanThanh_Click);
             // 
+            // gunaTextBox3
+            // 
+            this.gunaTextBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox3.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox3.ForeColor = System.Drawing.Color.Black;
+            this.gunaTextBox3.Location = new System.Drawing.Point(27, 166);
+            this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaTextBox3.Name = "gunaTextBox3";
+            this.gunaTextBox3.PasswordChar = '\0';
+            this.gunaTextBox3.Size = new System.Drawing.Size(331, 37);
+            this.gunaTextBox3.TabIndex = 44;
+            // 
             // frombanhang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 603);
+            this.ClientSize = new System.Drawing.Size(1327, 742);
             this.Controls.Add(this.QuyTrinhBanHang);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frombanhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bán hàng";
@@ -1334,7 +1376,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBox5;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox3;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
         private Guna.UI.WinForms.GunaLabel txt_priceCart;
@@ -1353,5 +1394,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox8;
         private Guna.UI.WinForms.GunaLabel gunaLabel11;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox3;
     }
 }

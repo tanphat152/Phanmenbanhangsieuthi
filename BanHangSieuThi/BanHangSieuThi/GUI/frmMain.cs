@@ -15,6 +15,7 @@ namespace BanHangSieuThi.GUI
         public frmMain()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
        

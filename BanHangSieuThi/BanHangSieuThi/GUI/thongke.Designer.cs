@@ -62,6 +62,9 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dtgv_thongke.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtgv_thongke.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgv_thongke.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgv_thongke.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dtgv_thongke.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -86,14 +89,14 @@
             this.dtgv_thongke.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv_thongke.EnableHeadersVisualStyles = false;
             this.dtgv_thongke.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dtgv_thongke.Location = new System.Drawing.Point(13, 177);
+            this.dtgv_thongke.Location = new System.Drawing.Point(13, 233);
             this.dtgv_thongke.Name = "dtgv_thongke";
             this.dtgv_thongke.ReadOnly = true;
             this.dtgv_thongke.RowHeadersVisible = false;
             this.dtgv_thongke.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
             this.dtgv_thongke.RowTemplate.Height = 30;
             this.dtgv_thongke.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgv_thongke.Size = new System.Drawing.Size(1083, 330);
+            this.dtgv_thongke.Size = new System.Drawing.Size(1257, 408);
             this.dtgv_thongke.TabIndex = 2;
             this.dtgv_thongke.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dtgv_thongke.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -161,7 +164,6 @@
             // 
             // gunaBtnSearch
             // 
-            this.gunaBtnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaBtnSearch.AnimationHoverSpeed = 0.07F;
             this.gunaBtnSearch.AnimationSpeed = 0.03F;
             this.gunaBtnSearch.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -171,7 +173,7 @@
             this.gunaBtnSearch.ForeColor = System.Drawing.Color.White;
             this.gunaBtnSearch.Image = ((System.Drawing.Image)(resources.GetObject("gunaBtnSearch.Image")));
             this.gunaBtnSearch.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaBtnSearch.Location = new System.Drawing.Point(955, 120);
+            this.gunaBtnSearch.Location = new System.Drawing.Point(1120, 175);
             this.gunaBtnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaBtnSearch.Name = "gunaBtnSearch";
             this.gunaBtnSearch.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -179,9 +181,10 @@
             this.gunaBtnSearch.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaBtnSearch.OnHoverImage = null;
             this.gunaBtnSearch.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaBtnSearch.Size = new System.Drawing.Size(105, 30);
+            this.gunaBtnSearch.Size = new System.Drawing.Size(150, 38);
             this.gunaBtnSearch.TabIndex = 19;
             this.gunaBtnSearch.Text = "Search";
+            this.gunaBtnSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_search
             // 
@@ -192,11 +195,11 @@
             this.txt_search.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_search.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_search.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_search.Location = new System.Drawing.Point(746, 117);
+            this.txt_search.Location = new System.Drawing.Point(850, 175);
             this.txt_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_search.Name = "txt_search";
             this.txt_search.PasswordChar = '\0';
-            this.txt_search.Size = new System.Drawing.Size(184, 31);
+            this.txt_search.Size = new System.Drawing.Size(239, 38);
             this.txt_search.TabIndex = 18;
             this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             // 
@@ -213,7 +216,7 @@
             this.txt_maSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_maSP.Name = "txt_maSP";
             this.txt_maSP.PasswordChar = '\0';
-            this.txt_maSP.Size = new System.Drawing.Size(143, 30);
+            this.txt_maSP.Size = new System.Drawing.Size(180, 38);
             this.txt_maSP.TabIndex = 20;
             // 
             // txt_SP
@@ -229,7 +232,7 @@
             this.txt_SP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_SP.Name = "txt_SP";
             this.txt_SP.PasswordChar = '\0';
-            this.txt_SP.Size = new System.Drawing.Size(143, 30);
+            this.txt_SP.Size = new System.Drawing.Size(180, 38);
             this.txt_SP.TabIndex = 21;
             // 
             // txt_SoLuong
@@ -245,7 +248,7 @@
             this.txt_SoLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_SoLuong.Name = "txt_SoLuong";
             this.txt_SoLuong.PasswordChar = '\0';
-            this.txt_SoLuong.Size = new System.Drawing.Size(143, 30);
+            this.txt_SoLuong.Size = new System.Drawing.Size(180, 38);
             this.txt_SoLuong.TabIndex = 22;
             // 
             // txt_NSX
@@ -261,7 +264,7 @@
             this.txt_NSX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_NSX.Name = "txt_NSX";
             this.txt_NSX.PasswordChar = '\0';
-            this.txt_NSX.Size = new System.Drawing.Size(143, 30);
+            this.txt_NSX.Size = new System.Drawing.Size(180, 38);
             this.txt_NSX.TabIndex = 23;
             // 
             // thongke
@@ -269,7 +272,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(126)))), ((int)(((byte)(214)))));
-            this.ClientSize = new System.Drawing.Size(1108, 519);
+            this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.txt_NSX);
             this.Controls.Add(this.txt_SoLuong);
             this.Controls.Add(this.txt_SP);

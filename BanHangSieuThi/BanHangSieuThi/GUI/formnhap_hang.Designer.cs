@@ -83,8 +83,8 @@
             this.gunaBtSua.ForeColor = System.Drawing.Color.White;
             this.gunaBtSua.Image = ((System.Drawing.Image)(resources.GetObject("gunaBtSua.Image")));
             this.gunaBtSua.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaBtSua.Location = new System.Drawing.Point(13, 398);
-            this.gunaBtSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaBtSua.Location = new System.Drawing.Point(25, 399);
+            this.gunaBtSua.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtSua.Name = "gunaBtSua";
             this.gunaBtSua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaBtSua.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -107,8 +107,8 @@
             this.gunaBtThem.ForeColor = System.Drawing.Color.White;
             this.gunaBtThem.Image = ((System.Drawing.Image)(resources.GetObject("gunaBtThem.Image")));
             this.gunaBtThem.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaBtThem.Location = new System.Drawing.Point(13, 335);
-            this.gunaBtThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaBtThem.Location = new System.Drawing.Point(25, 336);
+            this.gunaBtThem.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtThem.Name = "gunaBtThem";
             this.gunaBtThem.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaBtThem.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -131,8 +131,8 @@
             this.gunaBtXoa.ForeColor = System.Drawing.Color.White;
             this.gunaBtXoa.Image = ((System.Drawing.Image)(resources.GetObject("gunaBtXoa.Image")));
             this.gunaBtXoa.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaBtXoa.Location = new System.Drawing.Point(13, 463);
-            this.gunaBtXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaBtXoa.Location = new System.Drawing.Point(25, 464);
+            this.gunaBtXoa.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtXoa.Name = "gunaBtXoa";
             this.gunaBtXoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaBtXoa.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -176,7 +176,7 @@
             this.guTbMaSP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbMaSP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbMaSP.Location = new System.Drawing.Point(160, 90);
-            this.guTbMaSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbMaSP.Margin = new System.Windows.Forms.Padding(4);
             this.guTbMaSP.Name = "guTbMaSP";
             this.guTbMaSP.PasswordChar = '\0';
             this.guTbMaSP.Size = new System.Drawing.Size(213, 41);
@@ -192,7 +192,7 @@
             this.guTbTenSP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbTenSP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbTenSP.Location = new System.Drawing.Point(545, 90);
-            this.guTbTenSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbTenSP.Margin = new System.Windows.Forms.Padding(4);
             this.guTbTenSP.Name = "guTbTenSP";
             this.guTbTenSP.PasswordChar = '\0';
             this.guTbTenSP.Size = new System.Drawing.Size(529, 41);
@@ -219,7 +219,7 @@
             this.guTbLoaiSP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbLoaiSP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbLoaiSP.Location = new System.Drawing.Point(1290, 90);
-            this.guTbLoaiSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbLoaiSP.Margin = new System.Windows.Forms.Padding(4);
             this.guTbLoaiSP.Name = "guTbLoaiSP";
             this.guTbLoaiSP.PasswordChar = '\0';
             this.guTbLoaiSP.Size = new System.Drawing.Size(213, 41);
@@ -246,7 +246,7 @@
             this.guTbSLSP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbSLSP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbSLSP.Location = new System.Drawing.Point(159, 150);
-            this.guTbSLSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbSLSP.Margin = new System.Windows.Forms.Padding(4);
             this.guTbSLSP.Name = "guTbSLSP";
             this.guTbSLSP.PasswordChar = '\0';
             this.guTbSLSP.Size = new System.Drawing.Size(213, 41);
@@ -273,7 +273,7 @@
             this.guTbGiaNhapSP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbGiaNhapSP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbGiaNhapSP.Location = new System.Drawing.Point(545, 150);
-            this.guTbGiaNhapSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbGiaNhapSP.Margin = new System.Windows.Forms.Padding(4);
             this.guTbGiaNhapSP.Name = "guTbGiaNhapSP";
             this.guTbGiaNhapSP.PasswordChar = '\0';
             this.guTbGiaNhapSP.Size = new System.Drawing.Size(213, 41);
@@ -300,7 +300,7 @@
             this.guTbGiaBanSP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbGiaBanSP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbGiaBanSP.Location = new System.Drawing.Point(861, 150);
-            this.guTbGiaBanSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbGiaBanSP.Margin = new System.Windows.Forms.Padding(4);
             this.guTbGiaBanSP.Name = "guTbGiaBanSP";
             this.guTbGiaBanSP.PasswordChar = '\0';
             this.guTbGiaBanSP.Size = new System.Drawing.Size(213, 41);
@@ -327,7 +327,7 @@
             this.guTbLoiNhuanSP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbLoiNhuanSP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbLoiNhuanSP.Location = new System.Drawing.Point(1290, 145);
-            this.guTbLoiNhuanSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbLoiNhuanSP.Margin = new System.Windows.Forms.Padding(4);
             this.guTbLoiNhuanSP.Name = "guTbLoiNhuanSP";
             this.guTbLoiNhuanSP.PasswordChar = '\0';
             this.guTbLoiNhuanSP.Size = new System.Drawing.Size(213, 41);
@@ -354,7 +354,7 @@
             this.guTbMoTa.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbMoTa.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbMoTa.Location = new System.Drawing.Point(159, 208);
-            this.guTbMoTa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbMoTa.Margin = new System.Windows.Forms.Padding(4);
             this.guTbMoTa.Name = "guTbMoTa";
             this.guTbMoTa.PasswordChar = '\0';
             this.guTbMoTa.Size = new System.Drawing.Size(915, 41);
@@ -381,7 +381,7 @@
             this.guTbNXS.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.guTbNXS.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guTbNXS.Location = new System.Drawing.Point(1290, 208);
-            this.guTbNXS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guTbNXS.Margin = new System.Windows.Forms.Padding(4);
             this.guTbNXS.Name = "guTbNXS";
             this.guTbNXS.PasswordChar = '\0';
             this.guTbNXS.Size = new System.Drawing.Size(213, 41);
@@ -398,8 +398,8 @@
             this.gunaBtLuu.ForeColor = System.Drawing.Color.White;
             this.gunaBtLuu.Image = ((System.Drawing.Image)(resources.GetObject("gunaBtLuu.Image")));
             this.gunaBtLuu.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaBtLuu.Location = new System.Drawing.Point(13, 530);
-            this.gunaBtLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaBtLuu.Location = new System.Drawing.Point(25, 531);
+            this.gunaBtLuu.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtLuu.Name = "gunaBtLuu";
             this.gunaBtLuu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaBtLuu.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -422,8 +422,8 @@
             this.gunaBtHuy.ForeColor = System.Drawing.Color.White;
             this.gunaBtHuy.Image = ((System.Drawing.Image)(resources.GetObject("gunaBtHuy.Image")));
             this.gunaBtHuy.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaBtHuy.Location = new System.Drawing.Point(13, 595);
-            this.gunaBtHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaBtHuy.Location = new System.Drawing.Point(25, 596);
+            this.gunaBtHuy.Margin = new System.Windows.Forms.Padding(4);
             this.gunaBtHuy.Name = "gunaBtHuy";
             this.gunaBtHuy.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaBtHuy.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -441,6 +441,9 @@
             this.gunaDataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gunaDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
@@ -474,7 +477,7 @@
             this.gunaDataGridView1.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.gunaDataGridView1.RowTemplate.Height = 24;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(1243, 446);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(1282, 433);
             this.gunaDataGridView1.TabIndex = 33;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;

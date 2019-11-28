@@ -21,6 +21,7 @@ namespace BanHangSieuThi.GUI
         public frombanhang()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
             QuyTrinhBanHang.SizeMode = TabSizeMode.Fixed;
             QuyTrinhBanHang.Appearance = TabAppearance.FlatButtons;
             QuyTrinhBanHang.ItemSize = new Size(0, 1);
@@ -46,6 +47,7 @@ namespace BanHangSieuThi.GUI
             reloadDataGridViewShowCart(cart.Get(), showCartOIFE);
             txt_priceCart.Text = cart.GetPriceOfCart().ToString();
             btn_NBH.Enabled = true;
+
         }
         
 
@@ -165,6 +167,7 @@ namespace BanHangSieuThi.GUI
             cart.Clear();
             reloadDataGridViewShowCart(cart.Get(), showCart);
             btn_removeCart.Enabled = false;
+            btn_nextNTT.Enabled = false;
         }
 
         #endregion
