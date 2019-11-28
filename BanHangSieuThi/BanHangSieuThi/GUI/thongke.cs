@@ -42,12 +42,20 @@ namespace BanHangSieuThi.GUI
             {
                 try 
                 {
-                    query = "ThongKe_SP";
+                    /*query = "ThongKe_SP";
                     cmd = new SqlCommand(query, conn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     adap = new SqlDataAdapter(cmd);
                     adap.Fill(dt);
-                    dtgv_thongke.DataSource = dt;
+                    dtgv_thongke.DataSource = dt;*/
+                    query = "select MaSP as'Mã sản phẩm', TenSP as 'Tên sản phẩm',SoLuong as'Số lượng', GiaBan as'Giá bán',NSX from tblSanPham " +
+            "where MaSP like N'%" + txt_search.Text + "%' or TenSP like N'%" + txt_search.Text + "%' or NSX like N'%" + txt_search.Text + "%'";
+                  
+                        adap = new SqlDataAdapter(query, conn);
+                        adap.Fill(dt);
+                        dtgv_thongke.DataSource = dt;
+                    
+
                 }
                 catch
                     { }
